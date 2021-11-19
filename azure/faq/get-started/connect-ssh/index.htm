@@ -1,0 +1,1109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect to the server using SSH</title>
+
+    <meta name="description" content="">
+
+    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="twitter:card" content="summary">
+    
+    <meta name="twitter:title" content="Connect to the server using SSH">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:title" content="Connect to the server using SSH">
+    <meta property="og:type" content="documentation">
+    <meta property="og:description" content="">
+    <meta property="article:published_time" content="2021-03-24" />
+    <meta name="addsearch-custom-field" content="type=faq"/>
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1874455-2"></script>
+    <script type="text/plain" class="optanon-category-C0002">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-1874455-2', { 'page_path': location.pathname + location.search + location.hash });
+    </script>
+    <script type="text/plain" class="optanon-category-C0002">
+      (function(h,o,t,j,a,r){h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};h._hjSettings={hjid:650911,hjsv:6};a=o.getElementsByTagName('head')[0];r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <link href='https://use.typekit.net/iwb8jlp.css' media="screen" rel="stylesheet">
+    <link href='//d1d5nb8vlsbujg.cloudfront.net/hex/3.1.3/hex.min.css' media="screen" rel="stylesheet">
+
+<link rel="stylesheet" href="https://docs.bitnami.com/css/bds.2cdeeab4db04faea3656df6e70e89763398a08c0949f1e5209f44d4cd8d174f9.css" integrity="sha256-LN7qtNsE&#43;uo2Vt9ucOiXYzmKCMCUnx5SCfRNTNjRdPk=" media="screen">
+
+    <script src='//d1d5nb8vlsbujg.cloudfront.net/hex/3.1.3/hex.min.js'></script>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"></script>
+
+
+
+<script src="https://docs.bitnami.com/js/bds.min.73982bac5b9bd2a58bdd20f88b743eb785f29d30e96583ff6cfd7d8376ba19d5.js"></script>
+
+
+    <link href='https://docs.bitnami.com/images/img/favicon.png' rel='shortcut icon'>
+    <link rel="alternate" type="application/rss+xml" title="Bitnami Documentation" href="https://docs.bitnami.com/index.xml"/>
+  </head>
+
+  <body class="azure faq">
+
+    <div class="addsearch__index" data-addsearch="include">azure</div>
+
+    
+    <div class="topnav container topnav-no-hero headbloc">
+  <header class="header">
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script=269e5a8e-d0b1-4d7a-ad7a-d8bdf8013fea></script>
+    
+    <script type="text/javascript">
+      
+      
+      
+      
+      
+      
+      function OptanonWrapper() {
+        
+        var events = window.dataLayer.filter(function(element) {
+          return element.event === "OneTrustGroupsUpdated" && element.OnetrustActiveGroups != null;
+        });
+
+        
+        { window.dataLayer.push({ event: 'OneTrustGroupsUpdated' }); }
+
+        if (events.length > 0) {
+          var latestEvent = events[events.length - 1];
+          var previousEvent = events.length === 1 ? latestEvent : events[events.length - 2];
+
+          
+          if (latestEvent.OnetrustActiveGroups != previousEvent.OnetrustActiveGroups) {
+            location.reload();
+          }
+        }
+      }
+    </script>
+    
+    <div class="header__logo">
+      <a href="https://bitnami.com"><img alt="Bitnami by VMware logo" src="https://docs.bitnami.com/images/logo.svg"/></a>
+    </div>
+    <nav class="header__nav">
+      <button aria-expanded="false" aria-haspopup="true" aria-label="Toggle menu" class="header__nav__hamburguer">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <ul class="header__nav__menu" role="menubar">
+        <li>
+          <a class="header__nav__menu__item" role="menuitem" href="https://bitnami.com/stacks">Applications</a>
+        </li>
+        <li>
+          <a aria-expanded="false" aria-haspopup="true" class="header__nav__menu__item" href="#" role="menuitem" tabindex="0">Kubernetes</a>
+          <ul aria-label="Kubernetes" class="header__nav__submenu header__nav__kubernetes" role="menu" aria-expanded="false">
+            <div class="header__nav__list">
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://kubeapps.com/" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Kubeapps</h3>
+      
+        <p>Your Application Dashboard for Kubernetes</p>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://docs.bitnami.com/kubernetes/" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Kubernetes Tutorials</h3>
+      
+        <p>Move Your Containers to Production</p>
+      
+    </div>
+  </a>
+</li>
+
+              
+            </div>
+            <div class="header__nav__kubernetes__others">
+              
+                <li role="none">
+  <a role="menuitem" class="header__nav__kubernetes__other" href="https://github.com/bitnami-labs/sealed-secrets" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+    Sealed Secrets
+  </a>
+</li>
+
+              
+                <li role="none">
+  <a role="menuitem" class="header__nav__kubernetes__other" href="https://kubeless.io/" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+    Kubeless
+  </a>
+</li>
+
+              
+                <li role="none">
+  <a role="menuitem" class="header__nav__kubernetes__other" href="https://github.com/ksonnet/kubecfg" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+    Kubecfg
+  </a>
+</li>
+
+              
+                <li role="none">
+  <a role="menuitem" class="header__nav__kubernetes__other" href="https://github.com/bitnami/charts" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-disc"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+    Helm Charts
+  </a>
+</li>
+
+              
+              <li role="none">
+                <a role="menuitem" href="https://bitnami.com/kubernetes" class="header__nav__kubernetes__all" target="_blank" rel="noopener noreferrer">See all projects</a>
+              </li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <a aria-expanded="false" aria-haspopup="true" class="header__nav__menu__item" href="#" role="menuitem" tabindex="0">Developers</a>
+          <ul aria-label="Developers" class="header__nav__submenu header__nav__developers" role="menu" aria-expanded="false">
+            <div class="header__nav__list">
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://docs.bitnami.com/">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Documentation</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none" class='header-hide-mobile'>
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://docs.bitnami.com/tutorials" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Tutorials</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/support" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Support</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://github.com/bitnami" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Open Source</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/careers" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>We&#39;re hiring</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+            </div>
+            <div class="header__nav__articles">
+              <h3>Latest articles</h3>
+              <ul>
+                
+                  <li><a href="https://engineering.bitnami.com/articles/we-ve-moved-discover-the-new-bitnami-tutorials-site.html" target="_blank" rel="noopener">We&#39;ve moved! - Discover the new Bitnami Tutorials site</a></li>
+                
+                  <li><a href="https://engineering.bitnami.com/articles/adding-grafana-plugins-and-configuring-datasources-in-bkpr.html" target="_blank" rel="noopener">Adding Grafana plugins and configuring data sources in BKPR</a></li>
+                
+                  <li><a href="https://engineering.bitnami.com/articles/the-road-to-production-ready-charts.html" target="_blank" rel="noopener">The road to production ready charts</a></li>
+                
+              </ul>
+              <a href="https://engineering.bitnami.com" class="header__nav__articles__all" target="_blank" rel="noopener">Read all articles</a>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <a aria-expanded="false" aria-haspopup="true" class="header__nav__menu__item" href="#" role="menuitem" tabindex="0">Company</a>
+          <ul aria-label="Company" class="header__nav__submenu header__nav__company" role="menu" aria-expanded="false">
+            <div class="header__nav__company__links">
+              <div class="header__nav__list">
+                
+                  
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/resources" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Resources</h3>
+      
+    </div>
+  </a>
+</li>
+
+                
+                  
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/news" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Newsroom</h3>
+      
+    </div>
+  </a>
+</li>
+
+                
+              </div>
+              <div class="header__nav__list">
+                
+                  
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/careers" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Careers</h3>
+      
+    </div>
+  </a>
+</li>
+
+                
+              </div>
+            </div>
+            <div class="header__nav__company__contact">
+              Do you want to talk?
+              <a role="menuitem" href="https://bitnami.com/contact" target="_blank" rel="noopener noreferrer">Contact Us</a>
+            </div>
+          </ul>
+        </li>
+        <div class='tocify header__nav__menu__toc'></div>
+      </ul>
+
+      
+      <div class="header__nav__user">
+        <div class="search search-overlay margin-t-small">
+          <div class="input-group type-small">
+            <div class="search__input">
+              <input type="search" name="q" autocomplete="on" placeholder="Search" />
+            </div>
+            
+          </div>
+          <div class='search__results elevation-2 padding-big'></div>
+        </div>
+      </div>
+      
+
+    </nav>
+  </header>
+</div>
+
+<main>
+  <button id="ot-sdk-btn" class="ot-sdk-show-settings"> Cookie Settings</button>
+  
+  <section>
+    <div class="container">
+    <nav class="breadcrumb margin-t-big">
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+  <a href="https://docs.bitnami.com/">Bitnami Documentation</a> &gt;
+  
+
+  
+  
+  <a href="https://docs.bitnami.com/azure/">Microsoft Azure</a> &gt;
+  
+
+  
+  
+  <a href="https://docs.bitnami.com/azure/faq/">Frequently Asked Questions for Microsoft Azure</a> &gt;
+  
+
+  
+  
+  <a href="https://docs.bitnami.com/azure/faq/get-started/">Getting started</a> &gt;
+  
+
+  
+  
+  <a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh/">Connect to the server using SSH</a>
+  
+
+</nav>
+
+
+
+    </div>
+  </section>
+  
+
+  <div class="container">
+    <div class="row collapse-on-phone collapse-on-phone-landscape">
+
+      
+        <div class="col-3">
+  
+
+
+
+
+<div class="category__Navigation menu-foldable padding-big margin-t-bigger margin-b-enormous">
+  <nav>
+    <h4 class="margin-t-reset margin-b-normal category__navtitle">Frequently Asked Questions for Microsoft Azure</h4>
+    
+      
+      <h4 class="margin-t-small category__title page">
+        Getting started
+      </h4>
+      <ul class="margin-reset remove-style padding-l-reset focus">
+        
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/understand-installation/">Learn about Bitnami images</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/find-credentials/">Find application credentials</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal focus">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh/">Connect to the server using SSH</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh-warning/">Learn about the SSH warning &#39;REMOTE HOST IDENTIFICATION HAS CHANGED&#39;</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/access-ssh-tunnel/">Access the server using an SSH tunnel</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/access-phpmyadmin/">Connect to phpMyAdmin</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/check-boot-logs/">Check the boot logs</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/access-phppgadmin/">Connect to phpPgAdmin</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/understand-directory-structure/">Understand the default directory structure</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/understand-upcoming-changes/">Understand upcoming changes to Bitnami Stacks</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/amp-modules-deprecation/">Learn about Bitnami PHP application modules deprecation</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/understand-az-resources/">Learn which resources are created by the Bitnami Launchpad</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/create-ad-user/">Create a Microsoft organizational account</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/configure-ad-user/">Configure a Microsoft organizational account to access your Microsoft Azure subscription</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/understand-bitnami-vault/">Understand the Bitnami Vault</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/understand-bitnami-agent/">Understand what data Bitnami collects from deployed Bitnami stacks</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/remove-storage-container/">Remove storage containers used by Bitnami applications</a>
+              
+
+            </li>
+          
+        
+      </ul>
+    
+      
+      <h4 class="margin-t-small category__title page">
+        Configuration
+      </h4>
+      <ul class="margin-reset remove-style padding-l-reset">
+        
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/configuration/configure-static-address/">Configure a static IP address</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/configuration/configure-custom-domain/">Configure a custom domain</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/configuration/use-external-smtp/">Configure third-party SMTP for outbound emails</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/configuration/understand-bnconfig/">Learn about the Bitnami Configuration Tool</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/configuration/block-suspicious-ip/">Block a suspicious IP address</a>
+              
+
+            </li>
+          
+        
+      </ul>
+    
+      
+      <h4 class="margin-t-small category__title page">
+        Administration
+      </h4>
+      <ul class="margin-reset remove-style padding-l-reset">
+        
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/control-services/">Start or stop services</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/provide-additional-ssh-access/">Give SSH access to another person, such as a customer</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/use-firewall/">Open or close server ports</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/find-subscription-id/">Locate your unique subscription ID</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/find-deployment-resourcegroup-id/">Locate deployment and resource group IDs</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/install-az-cli/">Install the Azure Command Line Interface (CLI)</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/download-deployment-template/">Download a deployment template</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/get-deployment-logs/">Obtain the deployment event logs</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/generate-configure-certificate-letsencrypt/">Auto-configure a Let&#39;s Encrypt certificate</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/change-server-type/">Modify or resize a Microsoft Azure virtual machine</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/improve-server-performance/">Improve server performance</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/upload-files/">Upload files using SFTP</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/enable-ssl-cloudflare/">Enable SSL access over HTTPS with Cloudflare</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/edit-privileged-files/">Edit files on the server</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/create-network-peering/">Configure virtual network peering</a>
+              
+
+            </li>
+          
+        
+      </ul>
+    
+      
+      <h4 class="margin-t-small category__title page">
+        Troubleshooting
+      </h4>
+      <ul class="margin-reset remove-style padding-l-reset">
+        
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/troubleshooting/troubleshoot-smtp-gmail/">Troubleshoot Gmail SMTP issues</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/troubleshooting/troubleshoot-ssh-keys/">Reset SSH keys</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/troubleshooting/troubleshoot-server-performance/">Troubleshoot server performance problems</a>
+              
+
+            </li>
+          
+        
+      </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </nav>
+</div>
+
+</div>
+
+<div class="col-7">
+  <article class="margin-t-bigger margin-b-enormous padding-h-normal">
+    <h1>
+      Connect to the server using SSH
+    </h1>
+    <section class="category__Content connect-ssh">
+      
+
+
+
+      <p><a name='obtain-ssh-credentials' /></a></p>
+<h3 id="obtain-ssh-credentials">Obtain SSH credentials</h3>
+<h5 id="obtain-ssh-credentials-from-the-bitnami-launchpad">Obtain SSH credentials from the Bitnami Launchpad</h5>
+<p>The <a href="https://azure.bitnami.com">Bitnami Launchpad for Microsoft Azure</a> automatically injects an auto-generated public SSH key for the <em>bitnami</em> user and allows the user to download the private SSH key. To do so, follow these steps:</p>
+<ul>
+<li>Browse to the <a href="https://azure.bitnami.com">Bitnami Launchpad for Microsoft Azure</a> and sign in if required using your Bitnami account.</li>
+<li>Select the &ldquo;Virtual Machines&rdquo; menu item.</li>
+<li>Select your cloud server from the resulting list.</li>
+<li>Download the SSH key for your server (<em>.pem</em> for Linux and Mac OS X, <em>.ppk</em> for Windows). Note the server IP address on the same page.</li>
+</ul>
+<p><a href="https://docs.bitnami.com/images/img/platforms/azure/lp-ssh-credentials-key.png"><img src="https://docs.bitnami.com/images/img/platforms/azure/lp-ssh-credentials-key.png" alt="SSH key"></a></p>
+<h5 id="obtain-ssh-credentials-from-the-azure-marketplace">Obtain SSH credentials from the Azure Marketplace</h5>
+<p>If you are using the <a href="https://azure.microsoft.com/marketplace/">Microsoft Azure Marketplace</a>, you will have been presented with a choice of using either an SSH password or an SSH key pair at the time of deploying the server as shown below:</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/azure/cm-ssh-options.png"><img src="https://docs.bitnami.com/images/img/platforms/azure/cm-ssh-options.png" alt="SSH deployment"></a></p>
+<ul>
+<li>
+<p>Option 1: SSH key pair</p>
+<p>If you have copied and pasted your SSH key file during the deployment of the server, you can retrieve your key in the &ldquo;Resource Group -&gt; Deployments&rdquo; section. Click on your deployment, you will see a summary with the related information:</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/azure/azure-ssh-key.png"><img src="https://docs.bitnami.com/images/img/platforms/azure/azure-ssh-key.png" alt="SSH key deployment"></a></p>
+</li>
+<li>
+<p>Option 2: SSH password</p>
+<p>The SSH password that you have entered during the server deployment is the same that you will use to access your server through an SSH client and to access the server through an SSH tunnel.</p>
+</li>
+</ul>
+<h3 id="connect-with-an-ssh-client">Connect with an SSH client</h3>
+<blockquote>
+<p>TIP: <a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh/#obtain-ssh-credentials">Refer to these instructions to learn how to obtain your SSH credentials</a>.</p>
+</blockquote>
+<blockquote>
+<p>NOTE: If you specified a custom username for SSH access when deploying your server, replace <em>bitnami</em> in the examples below with the correct username.</p>
+</blockquote>
+<h4 id="connect-with-an-ssh-client-on-windows-using-an-ssh-key">Connect with an SSH client on Windows using an SSH key</h4>
+<p>In order to access your server via SSH tunnel you need an SSH client. In the instructions below we have selected <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">PuTTY</a>, a free SSH client for Windows and UNIX platforms. To access the server via SSH tunnel using PuTTY on a specific port using an SSH tunnel, you need to have it configured in order to allow connections to your server.</p>
+<ul>
+<li>
+<p>Step 1: Obtain PuTTY</p>
+<ul>
+<li>Download the PuTTY ZIP archive from <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">its website</a>.</li>
+<li>Extract the contents to a folder on your desktop.</li>
+<li>Double-click the <em>putty.exe</em> file to bring up the PuTTY configuration window.</li>
+</ul>
+</li>
+<li>
+<p>Step 2: Convert your PEM private key to PPK format (optional)</p>
+<p>If your private key is in <em>.pem</em> format, it is necessary to convert it to PuTTY&rsquo;s own <em>.ppk</em> format before you can use it with PuTTY. If your private key is already in <em>.ppk</em> format, you may skip this step.</p>
+<p>Follow the steps below to convert your <em>.pem</em> private key to <em>.ppk</em> format:</p>
+<ul>
+<li>
+<p>Launch the PuTTY Key Generator by double-clicking the <em>puttygen.exe</em> file in the PuTTY installation directory.</p>
+</li>
+<li>
+<p>Click the &ldquo;Load&rdquo; button and select the private key file in <em>.pem</em> format.</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/convert-pem-ppk-1.png"><img src="https://docs.bitnami.com/images/img/platforms/common/convert-pem-ppk-1.png" alt="PuTTY key conversion"></a></p>
+</li>
+<li>
+<p>Once the private key has been imported, click the &ldquo;Save private key&rdquo; button to convert and save the key in PuTTY&rsquo;s <em>.ppk</em> key file format.</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/convert-pem-ppk-2.png"><img src="https://docs.bitnami.com/images/img/platforms/common/convert-pem-ppk-2.png" alt="PuTTY key conversion"></a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Step 3: Configure PuTTY</p>
+<ul>
+<li>
+<p>Double-click the <em>putty.exe</em> file to bring up the PuTTY configuration window.</p>
+</li>
+<li>
+<p>In the PuTTY configuration window, enter the host name or public IP address of your server into the &ldquo;Host Name (or IP address)&rdquo; field, as well as into the &ldquo;Saved Sessions&rdquo; field. Then, click &ldquo;Save&rdquo; to save the new session so you can reuse it later.</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-1.png"><img src="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-1.png" alt="PuTTY configuration"></a></p>
+</li>
+<li>
+<p>Obtain your SSH credentials in order to allow the authentication against the server. Refer to the <a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh/">FAQ</a> to learn how to obtain your SSH credentials for your client.</p>
+</li>
+<li>
+<p>In the &ldquo;Connection -&gt; SSH -&gt; Auth&rdquo; section, browse to the private key file (<em>.ppk</em>) you&rsquo;ve previously obtained in the step above.</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-2.png"><img src="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-2.png" alt="PuTTY configuration"></a></p>
+</li>
+<li>
+<p>In the &ldquo;Connection -&gt; Data&rdquo; section, enter the username <em>bitnami</em> into the &ldquo;Auto-login username&rdquo; field, under the &ldquo;Login details&rdquo; section.</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-username-bitnami.png"><img src="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-username-bitnami.png" alt="PuTTY configuration"></a></p>
+</li>
+<li>
+<p>In the &ldquo;Session&rdquo; section, click on the &ldquo;Save&rdquo; button to save the current configuration.</p>
+</li>
+<li>
+<p>Select the session you want to start (in case that you have saved more than one session) and click the &ldquo;Open&rdquo; button to open an SSH session to the server.</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-3.png"><img src="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-3.png" alt="PuTTY configuration"></a></p>
+<p>PuTTY will first ask you to confirm the server&rsquo;s host key and add it to the cache. Go ahead and click &ldquo;Yes&rdquo; to this request (<a href="../../get-started/connect-ssh-warning">learn more</a>).</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-warning.png"><img src="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-warning.png" alt="PuTTY connection"></a></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>You should now be logged in to your server. Here is an example of what you&rsquo;ll see:</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-4.png"><img src="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-4.png" alt="PuTTY connection"></a></p>
+<blockquote>
+<p>TIP: In case of difficulties using PuTTY, refer to the official documentation for <a href="https://the.earth.li/~sgtatham/putty/latest/htmldoc/AppendixA.html#faq-trouble">troubleshooting advice</a> and <a href="https://the.earth.li/~sgtatham/putty/latest/htmldoc/Chapter10.html#errors">resolution for common error messages</a>.</p>
+</blockquote>
+<p><a name='linux-and-mac-os-x' /></a></p>
+<h4 id="connect-with-an-ssh-client-on-linux-and-mac-os-x-using-an-ssh-key">Connect with an SSH client on Linux and Mac OS X using an SSH key</h4>
+<p>Linux and Mac OS X come bundled with SSH clients by default. In order to log in to your server, follow the steps below:</p>
+<ul>
+<li>
+<p>Open a new terminal window on your local system (for example, using &ldquo;Finder -&gt; Applications -&gt; Utilities -&gt; Terminal&rdquo; in Mac OS X or the Dash in Ubuntu).</p>
+</li>
+<li>
+<p>Set the permissions for your private key file (<em>.pem</em>) to 600 using a command like the one below. Refer to the <a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh/">FAQ</a> to learn how to obtain your SSH credentials.</p>
+<pre><code>  $ chmod 600 KEYFILE
+</code></pre>
+</li>
+<li>
+<p>Connect to the server using the following command:</p>
+<pre><code>  $ ssh -i KEYFILE bitnami@SERVER-IP
+</code></pre>
+<p>Remember to replace KEYFILE in the previous commands with the path to your private key file (<em>.pem</em>), and SERVER-IP  with the public IP address or hostname of your server.</p>
+</li>
+<li>
+<p>Your SSH client might ask you to confirm the server&rsquo;s host key and add it to the cache before connecting. Accept this request by typing or selecting &ldquo;Yes&rdquo; (<a href="../../get-started/connect-ssh-warning">learn more</a>).</p>
+</li>
+</ul>
+<p>You should now be logged in to your server. Here is an example of what you&rsquo;ll see:</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-linux-mac-1.png"><img src="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-linux-mac-1.png" alt="SSH connection"></a></p>
+<h5 id="connect-with-an-ssh-client-on-windows-using-an-ssh-password">Connect with an SSH client on Windows using an SSH password</h5>
+<p>In order to access your server via SSH tunnel you need an SSH client. In the instructions below we have selected <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">PuTTY</a>, a free SSH client for Windows and UNIX platforms. To access the server via SSH tunnel using PuTTY on a specific port using an SSH tunnel, you need to have it configured in order to allow connections to your server.</p>
+<ul>
+<li>
+<p>Step 1: Obtain PuTTY</p>
+<ul>
+<li>Download the PuTTY ZIP archive from <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">its website</a>.</li>
+<li>Extract the contents to a folder on your desktop.</li>
+<li>Double-click the <em>putty.exe</em> file to bring up the PuTTY configuration window.</li>
+</ul>
+</li>
+<li>
+<p>Step 2: Configure PuTTY</p>
+<ul>
+<li>
+<p>In the PuTTY configuration window, enter the host name or public IP address of your server into the &ldquo;Host Name (or IP address)&rdquo; field, as well as into the &ldquo;Saved Sessions&rdquo; field. Then, click &ldquo;Save&rdquo; to save the new session so you can reuse it later.</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-1.png"><img src="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-1.png" alt="PuTTY configuration"></a></p>
+</li>
+<li>
+<p>In the &ldquo;Connection -&gt; Data&rdquo; section, enter the username <em>bitnami</em> into the &ldquo;Auto-login username&rdquo; field, under the &ldquo;Login details&rdquo; section.</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-username-bitnami.png"><img src="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-username-bitnami.png" alt="PuTTY configuration"></a></p>
+</li>
+<li>
+<p>In the &ldquo;Session&rdquo; section, click on the &ldquo;Save&rdquo; button to save the current configuration.</p>
+</li>
+<li>
+<p>Select the session you want to start (in case that you have saved more than one session) and click the &ldquo;Open&rdquo; button to open an SSH session to the server.</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-3.png"><img src="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-3.png" alt="PuTTY configuration"></a></p>
+<p>PuTTY will first ask you to confirm the server&rsquo;s host key and add it to the cache. Go ahead and click &ldquo;Yes&rdquo; to this request (<a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh-warning/">learn more</a>).</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-warning.png"><img src="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-warning.png" alt="PuTTY connection"></a></p>
+</li>
+<li>
+<p>Enter the SSH password when prompted. Refer to the <a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh/">FAQ</a> to learn how to obtain your SSH credentials for your client.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>You should now be logged in to your server. Here is an example of what you&rsquo;ll see:</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-4.png"><img src="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-4.png" alt="PuTTY connection"></a></p>
+<blockquote>
+<p>TIP: In case of difficulties using PuTTY, refer to the official documentation for <a href="https://the.earth.li/~sgtatham/putty/latest/htmldoc/AppendixA.html#faq-trouble">troubleshooting advice</a> and <a href="https://the.earth.li/~sgtatham/putty/latest/htmldoc/Chapter10.html#errors">resolution for common error messages</a>.</p>
+</blockquote>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-4.png"><img src="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-windows-4.png" alt="PuTTY connection"></a></p>
+<p><a name='linux-and-mac-os-x' /></a></p>
+<h4 id="connect-with-an-ssh-client-on-linux-and-mac-os-x-using-an-ssh-password">Connect with an SSH client on Linux and Mac OS X using an SSH password</h4>
+<p>Linux and Mac OS X come bundled with SSH clients by default. In order to log in to your server, follow the steps below:</p>
+<ul>
+<li>
+<p>Open a new terminal window on your local system (for example, using &ldquo;Finder -&gt; Applications -&gt; Utilities -&gt; Terminal&rdquo; in Mac OS X or the Dash in Ubuntu).</p>
+</li>
+<li>
+<p>Connect to the server using the following command:</p>
+<pre><code>  $ ssh bitnami@SERVER-IP
+</code></pre>
+<p>Remember to replace SERVER-IP with the public IP address or hostname of your server.</p>
+</li>
+<li>
+<p>Your SSH client might ask you to confirm the server&rsquo;s host key and add it to the cache before connecting. Accept this request by typing or selecting &ldquo;Yes&rdquo; (<a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh-warning/">learn more</a>).</p>
+</li>
+<li>
+<p>Enter your SSH password when prompted. Refer to the <a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh/">FAQ</a> to learn how to obtain your SSH credentials for your client.</p>
+</li>
+</ul>
+<p>You should now be logged in to your server. Here is an example of what you&rsquo;ll see:</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-linux-mac-1.png"><img src="https://docs.bitnami.com/images/img/platforms/common/connect-ssh-linux-mac-1.png" alt="SSH connection"></a></p>
+<h3 id="forward-your-key-using-ssh-agent">Forward your key using SSH Agent</h3>
+<p>With key forwarding, you can connect to a host using an SSH key and then make the key available for subsequent SSH connections from that host. Key forwarding lets you connect to a host (host A) with your SSH key, and then connect to another host (host B) from host A using the same key.</p>
+<h4 id="forward-your-key-using-ssh-agent-on-windows">Forward your key using SSH Agent on Windows</h4>
+<p>To forward your SSH key using PuTTY, you must first have SSH access to your server. Please check the <a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh/#connect-with-an-ssh-client">SSH instructions for Windows</a> section for more information on this.</p>
+<p>Once you have your SSH client correctly configured, enable SSH Agent forwarding. To do so, follow these steps:</p>
+<ul>
+<li>
+<p>In the &ldquo;Connection -&gt; SSH -&gt; Auth&rdquo; section, activate the &ldquo;Allow agent forwarding&rdquo; checkbox.</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/common/forward-keys.png"><img src="https://docs.bitnami.com/images/img/platforms/common/forward-keys.png" alt="PuTTY forward agent"></a></p>
+</li>
+<li>
+<p>In the &ldquo;Session&rdquo; section, save your changes by clicking the &ldquo;Save&rdquo; button.</p>
+</li>
+<li>
+<p>Click the &ldquo;Open&rdquo; button to open an SSH session to the server. The SSH session will now forward your key for subsequent SSH sessions starting from the same server. You can check this by running the following:</p>
+<pre><code>  $ ssh-add -L
+</code></pre>
+</li>
+</ul>
+<blockquote>
+<p>TIP: In case of difficulties using PuTTY, refer to the official documentation for <a href="https://the.earth.li/~sgtatham/putty/latest/htmldoc/AppendixA.html#faq-trouble">troubleshooting advice</a> and <a href="https://the.earth.li/~sgtatham/putty/latest/htmldoc/Chapter10.html#errors">resolution for common error messages</a>.</p>
+</blockquote>
+<h4 id="forward-your-key-using-ssh-agent-on-linux-and-mac-os-x">Forward your key using SSH Agent on Linux and Mac OS X</h4>
+<blockquote>
+<p>NOTE: If you specified a custom username for SSH access when deploying your server, replace <em>bitnami</em> in the examples below with the correct username.</p>
+</blockquote>
+<p>Follow the steps below.</p>
+<ul>
+<li>
+<p>Open a new terminal window on your local system (for example, using &ldquo;Finder -&gt; Applications -&gt; Utilities -&gt; Terminal&rdquo; in Mac OS X or the Dash in Ubuntu).</p>
+</li>
+<li>
+<p>Ensure that you have the following information:</p>
+<ul>
+<li>IP address of the host which will forward the key.</li>
+<li>Private <a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh/#obtain-ssh-credentials">SSH key (<em>.pem</em> key file)</a> for the host which will forward the key.</li>
+</ul>
+</li>
+<li>
+<p>Run the following command on your local system to add the SSH key to the agent. Remember to replace KEYFILE with the path to your private key:</p>
+<pre><code>  $ ssh-add KEYFILE
+</code></pre>
+</li>
+<li>
+<p>Connect to the host using the <em>-A</em> option. Remember to replace SERVER-IP with the public IP address or hostname of your host.</p>
+<pre><code>  $ ssh -A bitnami@SERVER-IP
+</code></pre>
+</li>
+<li>
+<p>The SSH session will now forward your key for subsequent SSH sessions starting from the connected host. You can check this by running the following command:</p>
+<pre><code>  $ ssh-add -L
+</code></pre>
+</li>
+</ul>
+
+    </section>
+  </article>
+</div>
+
+<div class="col-2">
+  <aside class="documentable__sidebar padding-big margin-t-bigger">
+    <h4 class="margin-t-reset">In this article</h4>
+    <div class="tocify documentable__sidebar__toc"></div>
+  </aside>
+
+  
+  <section class="documentable__lastmod padding-big padding-l-bigger margin-v-enormous">
+    Last modification
+    <span class="date">March 24, 2021</span>
+  </section>
+  
+
+</div>
+      
+
+    </div>
+  </div>
+</main>
+
+
+    <footer class='footer bg-dark type-color-reverse-anchor-reset'>
+  <div class='container padding-v-bigger'>
+    <div class='row collapse-b-desktop'>
+      <div class='col-3 footer__copyright'>
+        <h4 class="inverse">
+          <img src="https://d33np9n32j53g7.cloudfront.net/assets/logos/bitnami-by-vmware-dark-bg.svg" alt="Bitnami by VMware Logo" class=logo />
+        </h4>
+        <a href="https://twitter.com/Bitnami" class="socialIcon margin-r-small"><svg role=img aria-label="See the Twitter Profile of Bitnami" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+          <title>twitter</title>
+          <circle fill=currentColor cx=27 cy=27 r=27 />
+          <path d="M14 35.618A15.166 15.166 0 0 0 22.177 38c9.904 0 15.498-8.313 15.162-15.77A10.761 10.761 0 0 0 40 19.485c-.957.422-1.985.707-3.063.834a5.314 5.314 0 0 0 2.344-2.932 10.729 10.729 0 0 1-3.386 1.287A5.344 5.344 0 0 0 32 17c-3.442 0-5.973 3.193-5.195 6.51a15.17 15.17 0 0 1-10.994-5.54 5.288 5.288 0 0 0 1.65 7.078 5.33 5.33 0 0 1-2.417-.663c-.057 2.456 1.714 4.753 4.279 5.265-.751.204-1.573.25-2.408.09a5.33 5.33 0 0 0 4.982 3.683A10.767 10.767 0 0 1 14 35.618" fill=currentColor />
+        </svg>
+        </a><a href="https://github.com/bitnami" class="socialIcon margin-r-small"><svg role=img aria-label="See the Github Profile of Bitnami" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+          <title>github</title>
+          <circle fill=currentColor cx=27 cy=27 r=27 />
+          <path d="M27.5 14C20.044 14 14 19.968 14 27.33c0 5.888 3.868 10.885 9.233 12.647.675.122.921-.289.921-.642 0-.317-.011-1.155-.018-2.268-3.755.806-4.547-1.786-4.547-1.786-.614-1.54-1.5-1.95-1.5-1.95-1.225-.827.094-.81.094-.81 1.355.094 2.067 1.373 2.067 1.373 1.204 2.038 3.16 1.45 3.93 1.108.122-.861.47-1.449.856-1.782-2.997-.336-6.149-1.48-6.149-6.588 0-1.455.526-2.644 1.39-3.576-.14-.337-.603-1.693.132-3.527 0 0 1.133-.36 3.712 1.366a13.085 13.085 0 0 1 3.38-.449c1.146.005 2.301.153 3.38.449 2.577-1.725 3.708-1.366 3.708-1.366.737 1.834.273 3.19.134 3.527.865.932 1.388 2.121 1.388 3.576 0 5.12-3.156 6.248-6.164 6.578.485.411.917 1.225.917 2.468 0 1.782-.017 3.22-.017 3.657 0 .356.243.77.928.64C37.135 38.21 41 33.218 41 27.33 41 19.968 34.955 14 27.5 14" fill=currentColor />
+        </svg>
+        </a><a href="https://www.youtube.com/user/bitrock5" class="socialIcon margin-r-small"><svg role=img aria-label="See the Youtube Profile of Bitnami" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+          <title>youtube</title>
+          <circle fill=currentColor cx=27 cy=27 r=27 />
+          <path d="M24.2 31.286v-8.572L31.474 27 24.2 31.286zm16.215-11.163a3.543 3.543 0 0 0-2.476-2.526C35.756 17 27 17 27 17s-8.755 0-10.938.597a3.544 3.544 0 0 0-2.476 2.526C13 22.351 13 27 13 27s0 4.649.585 6.877a3.543 3.543 0 0 0 2.476 2.526C18.244 37 27 37 27 37s8.756 0 10.94-.597a3.543 3.543 0 0 0 2.475-2.526C41 31.649 41 27 41 27s0-4.649-.585-6.877z" fill=currentColor />
+        </svg>
+        </a><a href="https://www.linkedin.com/company/bitnami" class=socialIcon><svg role=img aria-label="See the LinkedIn Profile of Bitnami" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+          <title>linkedin</title>
+          <circle fill=currentColor cx=27 cy=27 r=27 />
+          <path d="M20.6 17.8c0 1.542-1.253 2.8-2.8 2.8S15 19.35 15 17.8c0-1.542 1.253-2.8 2.8-2.8s2.8 1.258 2.8 2.8zm0 5.2h-4.8v16h4.8V23zm7.889-.303H23.8V39h4.689v-8.553c0-2.295 1.024-3.656 2.979-3.656 1.802 0 2.666 1.309 2.666 3.656V39H39V28.676c0-4.364-2.395-6.476-5.755-6.476-3.351 0-4.765 2.697-4.765 2.697v-2.2h.009z" fill=currentColor />
+        </svg>
+        </a><p class='type-color-gray type-small'>
+          &#169; 2021 Bitnami | All Rights Reserved.
+        </p>
+      </div>
+      <div class="col-9">
+        <div class='row collapse-3-on-phone-land collapse-2-on-phone'>
+          <div class="col-2">
+            <ul class='remove-style padding-reset'>
+              <h3>Products</h3>
+              
+                <li><a href="https://bitnami.com/stacks">Application Catalog</a></li>
+              
+              <li>
+                <a 
+                  href="https://tanzu.vmware.com/application-catalog"
+                  target="_blank"
+                  aria-label="Open in new tab"
+                >
+                  VMware App Catalog
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Projects</h3>
+              <li><a href="https://bitnami.com/projects/kubeapps-and-bkpr">Kubeapps + BKPR</a></li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Solutions</h3>
+              <li><a href="https://bitnami.com/kubernetes">Kubernetes</a></li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Company</h3>
+              <li><a href="https://bitnami.com/careers">Careers</a></li>
+              <li><a href="https://bitnami.com/resources">Resources</a></li>
+              <li><a href="https://bitnami.com/news">News</a></li>
+              <li><a href="https://bitnami.com/contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Legal</h3>
+              <li><a href="https://www.vmware.com/help/legal.html">Terms of Use</a></li>
+              <li><a href="https://bitnami.com/trademark">Trademark</a></li>
+              <li><a href="https://www.vmware.com/help/privacy.html">Privacy</a></li>
+              <li><a href="https://www.vmware.com/help/privacy/california-privacy-rights.html">Your California Privacy Rights</a></li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Support</h3>
+              <li><a href="https://community.bitnami.com">Community</a></li>
+              <li><a href="https://bitnami.com/resources/webinars">Webinars</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script>build_search_menu('azure', '', 'faq')</script>
+    
+  </body>
+</html>

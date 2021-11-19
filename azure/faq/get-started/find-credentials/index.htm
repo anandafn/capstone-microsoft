@@ -1,0 +1,948 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find application credentials</title>
+
+    <meta name="description" content="">
+
+    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="twitter:card" content="summary">
+    
+    <meta name="twitter:title" content="Find application credentials">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:title" content="Find application credentials">
+    <meta property="og:type" content="documentation">
+    <meta property="og:description" content="">
+    <meta property="article:published_time" content="2021-01-07" />
+    <meta name="addsearch-custom-field" content="type=faq"/>
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1874455-2"></script>
+    <script type="text/plain" class="optanon-category-C0002">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-1874455-2', { 'page_path': location.pathname + location.search + location.hash });
+    </script>
+    <script type="text/plain" class="optanon-category-C0002">
+      (function(h,o,t,j,a,r){h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};h._hjSettings={hjid:650911,hjsv:6};a=o.getElementsByTagName('head')[0];r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <link href='https://use.typekit.net/iwb8jlp.css' media="screen" rel="stylesheet">
+    <link href='//d1d5nb8vlsbujg.cloudfront.net/hex/3.1.3/hex.min.css' media="screen" rel="stylesheet">
+
+<link rel="stylesheet" href="https://docs.bitnami.com/css/bds.2cdeeab4db04faea3656df6e70e89763398a08c0949f1e5209f44d4cd8d174f9.css" integrity="sha256-LN7qtNsE&#43;uo2Vt9ucOiXYzmKCMCUnx5SCfRNTNjRdPk=" media="screen">
+
+    <script src='//d1d5nb8vlsbujg.cloudfront.net/hex/3.1.3/hex.min.js'></script>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"></script>
+
+
+
+<script src="https://docs.bitnami.com/js/bds.min.73982bac5b9bd2a58bdd20f88b743eb785f29d30e96583ff6cfd7d8376ba19d5.js"></script>
+
+
+    <link href='https://docs.bitnami.com/images/img/favicon.png' rel='shortcut icon'>
+    <link rel="alternate" type="application/rss+xml" title="Bitnami Documentation" href="https://docs.bitnami.com/index.xml"/>
+  </head>
+
+  <body class="azure faq">
+
+    <div class="addsearch__index" data-addsearch="include">azure</div>
+
+    
+    <div class="topnav container topnav-no-hero headbloc">
+  <header class="header">
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script=269e5a8e-d0b1-4d7a-ad7a-d8bdf8013fea></script>
+    
+    <script type="text/javascript">
+      
+      
+      
+      
+      
+      
+      function OptanonWrapper() {
+        
+        var events = window.dataLayer.filter(function(element) {
+          return element.event === "OneTrustGroupsUpdated" && element.OnetrustActiveGroups != null;
+        });
+
+        
+        { window.dataLayer.push({ event: 'OneTrustGroupsUpdated' }); }
+
+        if (events.length > 0) {
+          var latestEvent = events[events.length - 1];
+          var previousEvent = events.length === 1 ? latestEvent : events[events.length - 2];
+
+          
+          if (latestEvent.OnetrustActiveGroups != previousEvent.OnetrustActiveGroups) {
+            location.reload();
+          }
+        }
+      }
+    </script>
+    
+    <div class="header__logo">
+      <a href="https://bitnami.com"><img alt="Bitnami by VMware logo" src="https://docs.bitnami.com/images/logo.svg"/></a>
+    </div>
+    <nav class="header__nav">
+      <button aria-expanded="false" aria-haspopup="true" aria-label="Toggle menu" class="header__nav__hamburguer">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <ul class="header__nav__menu" role="menubar">
+        <li>
+          <a class="header__nav__menu__item" role="menuitem" href="https://bitnami.com/stacks">Applications</a>
+        </li>
+        <li>
+          <a aria-expanded="false" aria-haspopup="true" class="header__nav__menu__item" href="#" role="menuitem" tabindex="0">Kubernetes</a>
+          <ul aria-label="Kubernetes" class="header__nav__submenu header__nav__kubernetes" role="menu" aria-expanded="false">
+            <div class="header__nav__list">
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://kubeapps.com/" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Kubeapps</h3>
+      
+        <p>Your Application Dashboard for Kubernetes</p>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://docs.bitnami.com/kubernetes/" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Kubernetes Tutorials</h3>
+      
+        <p>Move Your Containers to Production</p>
+      
+    </div>
+  </a>
+</li>
+
+              
+            </div>
+            <div class="header__nav__kubernetes__others">
+              
+                <li role="none">
+  <a role="menuitem" class="header__nav__kubernetes__other" href="https://github.com/bitnami-labs/sealed-secrets" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+    Sealed Secrets
+  </a>
+</li>
+
+              
+                <li role="none">
+  <a role="menuitem" class="header__nav__kubernetes__other" href="https://kubeless.io/" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+    Kubeless
+  </a>
+</li>
+
+              
+                <li role="none">
+  <a role="menuitem" class="header__nav__kubernetes__other" href="https://github.com/ksonnet/kubecfg" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+    Kubecfg
+  </a>
+</li>
+
+              
+                <li role="none">
+  <a role="menuitem" class="header__nav__kubernetes__other" href="https://github.com/bitnami/charts" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-disc"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+    Helm Charts
+  </a>
+</li>
+
+              
+              <li role="none">
+                <a role="menuitem" href="https://bitnami.com/kubernetes" class="header__nav__kubernetes__all" target="_blank" rel="noopener noreferrer">See all projects</a>
+              </li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <a aria-expanded="false" aria-haspopup="true" class="header__nav__menu__item" href="#" role="menuitem" tabindex="0">Developers</a>
+          <ul aria-label="Developers" class="header__nav__submenu header__nav__developers" role="menu" aria-expanded="false">
+            <div class="header__nav__list">
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://docs.bitnami.com/">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Documentation</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none" class='header-hide-mobile'>
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://docs.bitnami.com/tutorials" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Tutorials</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/support" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Support</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://github.com/bitnami" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Open Source</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/careers" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>We&#39;re hiring</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+            </div>
+            <div class="header__nav__articles">
+              <h3>Latest articles</h3>
+              <ul>
+                
+                  <li><a href="https://engineering.bitnami.com/articles/we-ve-moved-discover-the-new-bitnami-tutorials-site.html" target="_blank" rel="noopener">We&#39;ve moved! - Discover the new Bitnami Tutorials site</a></li>
+                
+                  <li><a href="https://engineering.bitnami.com/articles/adding-grafana-plugins-and-configuring-datasources-in-bkpr.html" target="_blank" rel="noopener">Adding Grafana plugins and configuring data sources in BKPR</a></li>
+                
+                  <li><a href="https://engineering.bitnami.com/articles/the-road-to-production-ready-charts.html" target="_blank" rel="noopener">The road to production ready charts</a></li>
+                
+              </ul>
+              <a href="https://engineering.bitnami.com" class="header__nav__articles__all" target="_blank" rel="noopener">Read all articles</a>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <a aria-expanded="false" aria-haspopup="true" class="header__nav__menu__item" href="#" role="menuitem" tabindex="0">Company</a>
+          <ul aria-label="Company" class="header__nav__submenu header__nav__company" role="menu" aria-expanded="false">
+            <div class="header__nav__company__links">
+              <div class="header__nav__list">
+                
+                  
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/resources" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Resources</h3>
+      
+    </div>
+  </a>
+</li>
+
+                
+                  
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/news" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Newsroom</h3>
+      
+    </div>
+  </a>
+</li>
+
+                
+              </div>
+              <div class="header__nav__list">
+                
+                  
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/careers" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Careers</h3>
+      
+    </div>
+  </a>
+</li>
+
+                
+              </div>
+            </div>
+            <div class="header__nav__company__contact">
+              Do you want to talk?
+              <a role="menuitem" href="https://bitnami.com/contact" target="_blank" rel="noopener noreferrer">Contact Us</a>
+            </div>
+          </ul>
+        </li>
+        <div class='tocify header__nav__menu__toc'></div>
+      </ul>
+
+      
+      <div class="header__nav__user">
+        <div class="search search-overlay margin-t-small">
+          <div class="input-group type-small">
+            <div class="search__input">
+              <input type="search" name="q" autocomplete="on" placeholder="Search" />
+            </div>
+            
+          </div>
+          <div class='search__results elevation-2 padding-big'></div>
+        </div>
+      </div>
+      
+
+    </nav>
+  </header>
+</div>
+
+<main>
+  <button id="ot-sdk-btn" class="ot-sdk-show-settings"> Cookie Settings</button>
+  
+  <section>
+    <div class="container">
+    <nav class="breadcrumb margin-t-big">
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+  <a href="https://docs.bitnami.com/">Bitnami Documentation</a> &gt;
+  
+
+  
+  
+  <a href="https://docs.bitnami.com/azure/">Microsoft Azure</a> &gt;
+  
+
+  
+  
+  <a href="https://docs.bitnami.com/azure/faq/">Frequently Asked Questions for Microsoft Azure</a> &gt;
+  
+
+  
+  
+  <a href="https://docs.bitnami.com/azure/faq/get-started/">Getting started</a> &gt;
+  
+
+  
+  
+  <a href="https://docs.bitnami.com/azure/faq/get-started/find-credentials/">Find application credentials</a>
+  
+
+</nav>
+
+
+
+    </div>
+  </section>
+  
+
+  <div class="container">
+    <div class="row collapse-on-phone collapse-on-phone-landscape">
+
+      
+        <div class="col-3">
+  
+
+
+
+
+<div class="category__Navigation menu-foldable padding-big margin-t-bigger margin-b-enormous">
+  <nav>
+    <h4 class="margin-t-reset margin-b-normal category__navtitle">Frequently Asked Questions for Microsoft Azure</h4>
+    
+      
+      <h4 class="margin-t-small category__title page">
+        Getting started
+      </h4>
+      <ul class="margin-reset remove-style padding-l-reset focus">
+        
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/understand-installation/">Learn about Bitnami images</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal focus">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/find-credentials/">Find application credentials</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh/">Connect to the server using SSH</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh-warning/">Learn about the SSH warning &#39;REMOTE HOST IDENTIFICATION HAS CHANGED&#39;</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/access-ssh-tunnel/">Access the server using an SSH tunnel</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/access-phpmyadmin/">Connect to phpMyAdmin</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/check-boot-logs/">Check the boot logs</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/access-phppgadmin/">Connect to phpPgAdmin</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/understand-directory-structure/">Understand the default directory structure</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/understand-upcoming-changes/">Understand upcoming changes to Bitnami Stacks</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/amp-modules-deprecation/">Learn about Bitnami PHP application modules deprecation</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/understand-az-resources/">Learn which resources are created by the Bitnami Launchpad</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/create-ad-user/">Create a Microsoft organizational account</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/configure-ad-user/">Configure a Microsoft organizational account to access your Microsoft Azure subscription</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/understand-bitnami-vault/">Understand the Bitnami Vault</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/understand-bitnami-agent/">Understand what data Bitnami collects from deployed Bitnami stacks</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/get-started/remove-storage-container/">Remove storage containers used by Bitnami applications</a>
+              
+
+            </li>
+          
+        
+      </ul>
+    
+      
+      <h4 class="margin-t-small category__title page">
+        Configuration
+      </h4>
+      <ul class="margin-reset remove-style padding-l-reset">
+        
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/configuration/configure-static-address/">Configure a static IP address</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/configuration/configure-custom-domain/">Configure a custom domain</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/configuration/use-external-smtp/">Configure third-party SMTP for outbound emails</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/configuration/understand-bnconfig/">Learn about the Bitnami Configuration Tool</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/configuration/block-suspicious-ip/">Block a suspicious IP address</a>
+              
+
+            </li>
+          
+        
+      </ul>
+    
+      
+      <h4 class="margin-t-small category__title page">
+        Administration
+      </h4>
+      <ul class="margin-reset remove-style padding-l-reset">
+        
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/control-services/">Start or stop services</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/provide-additional-ssh-access/">Give SSH access to another person, such as a customer</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/use-firewall/">Open or close server ports</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/find-subscription-id/">Locate your unique subscription ID</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/find-deployment-resourcegroup-id/">Locate deployment and resource group IDs</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/install-az-cli/">Install the Azure Command Line Interface (CLI)</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/download-deployment-template/">Download a deployment template</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/get-deployment-logs/">Obtain the deployment event logs</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/generate-configure-certificate-letsencrypt/">Auto-configure a Let&#39;s Encrypt certificate</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/change-server-type/">Modify or resize a Microsoft Azure virtual machine</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/improve-server-performance/">Improve server performance</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/upload-files/">Upload files using SFTP</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/enable-ssl-cloudflare/">Enable SSL access over HTTPS with Cloudflare</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/edit-privileged-files/">Edit files on the server</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/administration/create-network-peering/">Configure virtual network peering</a>
+              
+
+            </li>
+          
+        
+      </ul>
+    
+      
+      <h4 class="margin-t-small category__title page">
+        Troubleshooting
+      </h4>
+      <ul class="margin-reset remove-style padding-l-reset">
+        
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/troubleshooting/troubleshoot-smtp-gmail/">Troubleshoot Gmail SMTP issues</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/troubleshooting/troubleshoot-ssh-keys/">Reset SSH keys</a>
+              
+
+            </li>
+          
+            <li class="margin-b-normal">
+              <a href="https://docs.bitnami.com/azure/faq/troubleshooting/troubleshoot-server-performance/">Troubleshoot server performance problems</a>
+              
+
+            </li>
+          
+        
+      </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </nav>
+</div>
+
+</div>
+
+<div class="col-7">
+  <article class="margin-t-bigger margin-b-enormous padding-h-normal">
+    <h1>
+      Find application credentials
+    </h1>
+    <section class="category__Content find-credentials">
+      
+
+
+
+      <p><a name='administrator-username' /></a>
+<a name='administrator-password' /></a></p>
+<h3 id="find-credentials-using-the-microsoft-azure-marketplace">Find credentials using the Microsoft Azure Marketplace</h3>
+<p>You have two options for obtaining your application credentials:</p>
+<ul>
+<li><a href="#option-1-find-credentials-by-checking-the-system-log-on-the-microsoft-azure-management-console">Checking the System Log on the Microsoft Azure management console</a>.</li>
+<li><a href="#option-2-find-credentials-by-connecting-to-your-application-through-ssh">Connecting to your application through SSH</a>.</li>
+</ul>
+<p><a name='option-1-find-password-by-checking-the-system-log-on-the-microsoft-azure-management-console' /></a></p>
+<h4 id="option-1-find-credentials-by-checking-the-system-log-on-the-microsoft-azure-management-console">Option 1: Find credentials by checking the System Log on the Microsoft Azure management console</h4>
+<blockquote>
+<p>IMPORTANT: The application password is only available in the system log for the first 24 hours after you first start the instance. We strongly recommend that you note it down immediately on the first boot and save it in a safe place, as you will be unable to access the instance console without it. We also recommend that you change it as soon as possible for security reasons.</p>
+</blockquote>
+<p>The following video shows you the process to obtain the application credentials on the Microsoft Azure management console:</p>
+<div>
+  <iframe height=360 width=560 data-src="https://www.youtube.com/embed/SB6ZDws0m3E" frameborder="0" class="optanon-category-C0002-C0004" allow="" allowfullscreen>
+</iframe>
+<p>The administrator password to log in to your application is randomly generated during the first boot. This password can be viewed as follows:</p>
+<ul>
+<li>
+<p>Log in to the <a href="https://portal.azure.com/">Microsoft Azure management console</a>.</p>
+</li>
+<li>
+<p>Click the &ldquo;Virtual machines&rdquo; icon in the toolbar and select your server from the resulting list.</p>
+</li>
+<li>
+<p>In the &ldquo;Support + Troubleshooting&rdquo; menu, select the &ldquo;Boot diagnostics&rdquo; option.</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/azure/cm-app-credentials-3.png"><img src="https://docs.bitnami.com/images/img/platforms/azure/cm-app-credentials-3.png" alt="Application credentials"></a></p>
+</li>
+<li>
+<p>Review the system log until you find the administrator username and password.</p>
+<p><a href="https://docs.bitnami.com/images/img/platforms/azure/cm-app-credentials-4.png"><img src="https://docs.bitnami.com/images/img/platforms/azure/cm-app-credentials-4.png" alt="Application credentials"></a></p>
+</li>
+</ul>
+<p><a name='option-2-find-password-by-connecting-to-your-application-through-ssh' /></a></p>
+<h4 id="option-2-find-credentials-by-connecting-to-your-application-through-ssh">Option 2: Find credentials by connecting to your application through SSH</h4>
+<p>The application credentials are stored in a standalone file. To obtain the credentials at any time, follow these instructions:</p>
+<ul>
+<li>
+<p><a href="https://docs.bitnami.com/azure/faq/get-started/connect-ssh/">Connect to the application through SSH</a>.</p>
+</li>
+<li>
+<p>Run the following command to see your application credentials:</p>
+<pre><code>  $ sudo cat /home/bitnami/bitnami_credentials
+</code></pre>
+</li>
+</ul>
+<p><a name='using-the-bitnami-launchpad' /></a></p>
+<h3 id="find-credentials-using-the-bitnami-launchpad">Find credentials using the Bitnami Launchpad</h3>
+<p>Your default credentials become available once you create a cloud server. To find them, follow these steps:</p>
+<ul>
+<li>Browse to the <a href="https://azure.bitnami.com/">Bitnami Launchpad for Microsoft Azure</a> and sign in if required using your Bitnami account.</li>
+<li>Select the &ldquo;Virtual Machines&rdquo; menu item.</li>
+<li>Select your cloud server from the resulting list.</li>
+<li>The &ldquo;Application Info&rdquo; section in the left panel contains the credentials for your instance. The password is hidden by default but will be displayed in plain text when the &ldquo;Show&rdquo; button, adjacent to the password input, is clicked.</li>
+</ul>
+<p><a href="https://docs.bitnami.com/images/img/platforms/azure/lp-app-credentials.png"><img src="https://docs.bitnami.com/images/img/platforms/azure/lp-app-credentials.png" alt="Server credentials"></a></p>
+<h3 id="find-database-credentials">Find database credentials</h3>
+<h4 id="database-username">Database username</h4>
+<p>If you started a server (for example, MongoDB or similar) that isn&rsquo;t a Web application server or your application includes a database server, you can use the default administrator user to log in to the database (for example, <em>root</em>). In the table below you will find the username for the most popular databases:</p>
+<table>
+<thead>
+<tr>
+<th>Database</th>
+<th>Username</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MySQL, MariaDB, MongoDB</td>
+<td>root</td>
+</tr>
+<tr>
+<td>PostgreSQL</td>
+<td>postgres</td>
+</tr>
+</tbody>
+</table>
+<p>You can find more information for <a href="https://docs.bitnami.com/azure/apps">each specific server in our documentation</a>.</p>
+<h4 id="database-password">Database password</h4>
+<p>The database password is the same as the <a href="#administrator-password">administrator password</a> you use to log in to your application.</p>
+
+    </section>
+  </article>
+</div>
+
+<div class="col-2">
+  <aside class="documentable__sidebar padding-big margin-t-bigger">
+    <h4 class="margin-t-reset">In this article</h4>
+    <div class="tocify documentable__sidebar__toc"></div>
+  </aside>
+
+  
+  <section class="documentable__lastmod padding-big padding-l-bigger margin-v-enormous">
+    Last modification
+    <span class="date">January 7, 2021</span>
+  </section>
+  
+
+</div>
+      
+
+    </div>
+  </div>
+</main>
+
+
+    <footer class='footer bg-dark type-color-reverse-anchor-reset'>
+  <div class='container padding-v-bigger'>
+    <div class='row collapse-b-desktop'>
+      <div class='col-3 footer__copyright'>
+        <h4 class="inverse">
+          <img src="https://d33np9n32j53g7.cloudfront.net/assets/logos/bitnami-by-vmware-dark-bg.svg" alt="Bitnami by VMware Logo" class=logo />
+        </h4>
+        <a href="https://twitter.com/Bitnami" class="socialIcon margin-r-small"><svg role=img aria-label="See the Twitter Profile of Bitnami" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+          <title>twitter</title>
+          <circle fill=currentColor cx=27 cy=27 r=27 />
+          <path d="M14 35.618A15.166 15.166 0 0 0 22.177 38c9.904 0 15.498-8.313 15.162-15.77A10.761 10.761 0 0 0 40 19.485c-.957.422-1.985.707-3.063.834a5.314 5.314 0 0 0 2.344-2.932 10.729 10.729 0 0 1-3.386 1.287A5.344 5.344 0 0 0 32 17c-3.442 0-5.973 3.193-5.195 6.51a15.17 15.17 0 0 1-10.994-5.54 5.288 5.288 0 0 0 1.65 7.078 5.33 5.33 0 0 1-2.417-.663c-.057 2.456 1.714 4.753 4.279 5.265-.751.204-1.573.25-2.408.09a5.33 5.33 0 0 0 4.982 3.683A10.767 10.767 0 0 1 14 35.618" fill=currentColor />
+        </svg>
+        </a><a href="https://github.com/bitnami" class="socialIcon margin-r-small"><svg role=img aria-label="See the Github Profile of Bitnami" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+          <title>github</title>
+          <circle fill=currentColor cx=27 cy=27 r=27 />
+          <path d="M27.5 14C20.044 14 14 19.968 14 27.33c0 5.888 3.868 10.885 9.233 12.647.675.122.921-.289.921-.642 0-.317-.011-1.155-.018-2.268-3.755.806-4.547-1.786-4.547-1.786-.614-1.54-1.5-1.95-1.5-1.95-1.225-.827.094-.81.094-.81 1.355.094 2.067 1.373 2.067 1.373 1.204 2.038 3.16 1.45 3.93 1.108.122-.861.47-1.449.856-1.782-2.997-.336-6.149-1.48-6.149-6.588 0-1.455.526-2.644 1.39-3.576-.14-.337-.603-1.693.132-3.527 0 0 1.133-.36 3.712 1.366a13.085 13.085 0 0 1 3.38-.449c1.146.005 2.301.153 3.38.449 2.577-1.725 3.708-1.366 3.708-1.366.737 1.834.273 3.19.134 3.527.865.932 1.388 2.121 1.388 3.576 0 5.12-3.156 6.248-6.164 6.578.485.411.917 1.225.917 2.468 0 1.782-.017 3.22-.017 3.657 0 .356.243.77.928.64C37.135 38.21 41 33.218 41 27.33 41 19.968 34.955 14 27.5 14" fill=currentColor />
+        </svg>
+        </a><a href="https://www.youtube.com/user/bitrock5" class="socialIcon margin-r-small"><svg role=img aria-label="See the Youtube Profile of Bitnami" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+          <title>youtube</title>
+          <circle fill=currentColor cx=27 cy=27 r=27 />
+          <path d="M24.2 31.286v-8.572L31.474 27 24.2 31.286zm16.215-11.163a3.543 3.543 0 0 0-2.476-2.526C35.756 17 27 17 27 17s-8.755 0-10.938.597a3.544 3.544 0 0 0-2.476 2.526C13 22.351 13 27 13 27s0 4.649.585 6.877a3.543 3.543 0 0 0 2.476 2.526C18.244 37 27 37 27 37s8.756 0 10.94-.597a3.543 3.543 0 0 0 2.475-2.526C41 31.649 41 27 41 27s0-4.649-.585-6.877z" fill=currentColor />
+        </svg>
+        </a><a href="https://www.linkedin.com/company/bitnami" class=socialIcon><svg role=img aria-label="See the LinkedIn Profile of Bitnami" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+          <title>linkedin</title>
+          <circle fill=currentColor cx=27 cy=27 r=27 />
+          <path d="M20.6 17.8c0 1.542-1.253 2.8-2.8 2.8S15 19.35 15 17.8c0-1.542 1.253-2.8 2.8-2.8s2.8 1.258 2.8 2.8zm0 5.2h-4.8v16h4.8V23zm7.889-.303H23.8V39h4.689v-8.553c0-2.295 1.024-3.656 2.979-3.656 1.802 0 2.666 1.309 2.666 3.656V39H39V28.676c0-4.364-2.395-6.476-5.755-6.476-3.351 0-4.765 2.697-4.765 2.697v-2.2h.009z" fill=currentColor />
+        </svg>
+        </a><p class='type-color-gray type-small'>
+          &#169; 2021 Bitnami | All Rights Reserved.
+        </p>
+      </div>
+      <div class="col-9">
+        <div class='row collapse-3-on-phone-land collapse-2-on-phone'>
+          <div class="col-2">
+            <ul class='remove-style padding-reset'>
+              <h3>Products</h3>
+              
+                <li><a href="https://bitnami.com/stacks">Application Catalog</a></li>
+              
+              <li>
+                <a 
+                  href="https://tanzu.vmware.com/application-catalog"
+                  target="_blank"
+                  aria-label="Open in new tab"
+                >
+                  VMware App Catalog
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Projects</h3>
+              <li><a href="https://bitnami.com/projects/kubeapps-and-bkpr">Kubeapps + BKPR</a></li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Solutions</h3>
+              <li><a href="https://bitnami.com/kubernetes">Kubernetes</a></li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Company</h3>
+              <li><a href="https://bitnami.com/careers">Careers</a></li>
+              <li><a href="https://bitnami.com/resources">Resources</a></li>
+              <li><a href="https://bitnami.com/news">News</a></li>
+              <li><a href="https://bitnami.com/contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Legal</h3>
+              <li><a href="https://www.vmware.com/help/legal.html">Terms of Use</a></li>
+              <li><a href="https://bitnami.com/trademark">Trademark</a></li>
+              <li><a href="https://www.vmware.com/help/privacy.html">Privacy</a></li>
+              <li><a href="https://www.vmware.com/help/privacy/california-privacy-rights.html">Your California Privacy Rights</a></li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Support</h3>
+              <li><a href="https://community.bitnami.com">Community</a></li>
+              <li><a href="https://bitnami.com/resources/webinars">Webinars</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script>build_search_menu('azure', '', 'faq')</script>
+    
+  </body>
+</html>

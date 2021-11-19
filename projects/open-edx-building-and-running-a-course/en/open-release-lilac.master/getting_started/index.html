@@ -1,0 +1,1053 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. Getting Started &mdash; Building and Running an Open edX Course: Lilac Release  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" src="https://assets.readthedocs.org/static/javascript/readthedocs-doc-embed.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  
+    <link rel="stylesheet" href="https://assets.readthedocs.org/static/css/badge_only.css" type="text/css" />
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Building and Running an Open edX Course: Lilac Release  documentation" href="../index.html"/>
+        <link rel="next" title="2.1. Getting Started with Studio" href="CA_get_started_Studio.html"/>
+        <link rel="prev" title="1.3. edX Browser Support" href="../front_matter/browsers.html"/> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+
+<!-- RTD Extra Head -->
+
+<link rel="stylesheet" href="https://assets.readthedocs.org/static/css/readthedocs-doc-embed.css" type="text/css" />
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "build_date": "2021-06-17T17:11:45Z", "builder": "sphinx", "canonical_url": null, "commit": "f4e69088", "docroot": "/en_us/open_edx_course_authors/source/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "getting_started/index", "programming_language": "", "project": "open-edx-building-and-running-a-course", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "edx_theme", "user_analytics_code": "UA-50141783-1", "version": "open-release-lilac.master"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+<script type="text/javascript" src="https://assets.readthedocs.org/static/javascript/readthedocs-analytics.js" async="async"></script>
+
+<!-- end RTD <extrahead> -->
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course: Lilac Release</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. General Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. Other edX Resources</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../front_matter/preface.html#resources-for-edx-org-learners">1.2.1. Resources for edx.org Learners</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../front_matter/preface.html#the-edx-partner-portal">1.2.2. The edX Partner Portal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../front_matter/preface.html#the-open-edx-portal">1.2.3. The Open edX Portal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../front_matter/preface.html#system-status">1.2.4. System Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../front_matter/preface.html#resources-for-edx-org-course-teams">1.2.5. Resources for edx.org Course Teams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../front_matter/preface.html#resources-for-researchers">1.2.6. Resources for Researchers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../front_matter/preface.html#resources-for-developers">1.2.7. Resources for Developers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../front_matter/preface.html#resources-for-open-edx">1.2.8. Resources for Open edX</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.3. edX Browser Support</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CA_get_started_Studio.html">2.1. Getting Started with Studio</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="CA_get_started_Studio.html#what-is-studio">2.1.1. What Is Studio?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CA_get_started_Studio.html#what-is-the-lms">2.1.2. What Is the LMS?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../CA_dashboard_profile_SectionHead.html">3. Exploring Your Dashboard and Profile</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../CA_dashboard_profile_SectionHead.html#accessing-your-courses-from-the-dashboard">3.1. Accessing Your Courses from the Dashboard</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../CA_dashboard_profile_SectionHead.html#sharing-your-courses-on-social-media">3.1.1. Sharing Your Courses on Social Media</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../CA_dashboard_profile_SectionHead.html#adding-profile-information">3.2. Adding Profile Information</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../CA_dashboard_profile_SectionHead.html#add-or-update-a-limited-profile">3.2.1. Add or Update a Limited Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../CA_dashboard_profile_SectionHead.html#add-or-update-a-full-profile">3.2.2. Add or Update a Full Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../CA_dashboard_profile_SectionHead.html#add-links-to-your-personal-social-media-accounts">3.2.3. Add Links to Your Personal Social Media Accounts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../CA_dashboard_profile_SectionHead.html#view-another-learner-s-profile">3.2.4. View Another Learner’s Profile</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../CA_dashboard_profile_SectionHead.html#updating-course-specific-settings">3.3. Updating Course-Specific Settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../CA_dashboard_profile_SectionHead.html#change-a-course-email-preference">3.3.1. Change a Course Email Preference</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../reaching_learners/index.html">4. Reaching As Many Learners As Possible</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../reaching_learners/design_for_mobile.html">4.1. Designing Your Course For a Mobile Experience</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../reaching_learners/design_for_mobile.html#testing-your-course-for-mobile-devices">4.1.1. Testing Your Course For Mobile Devices</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../accessibility/index.html">5. Accessibility Best Practices Guidance for Content Providers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../accessibility/edX_accessib_guidelines.html">5.1. What Is The EdX Accessibility Best Practices Guidance Based On?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accessibility/supporting_learners_diverse_needs.html">5.2. Supporting Learners with Diverse Needs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility/supporting_learners_diverse_needs.html#who-are-our-learners">5.2.1. Who Are Our Learners?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility/supporting_learners_diverse_needs.html#removing-barriers-to-learning">5.2.2. Removing Barriers to Learning</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../accessibility/best_practices_course_content_dev.html">5.3. Accessibility Best Practices for Developing Course Content</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility/best_practices_course_content_dev.html#make-sure-your-course-content-is-perceivable">5.3.1. Make Sure Your Course Content is Perceivable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility/best_practices_course_content_dev.html#make-sure-your-course-content-is-understandable">5.3.2. Make Sure Your Course Content is Understandable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility/best_practices_course_content_dev.html#use-best-practices-for-describing-images">5.3.3. Use Best Practices for Describing Images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility/best_practices_course_content_dev.html#create-accessible-course-materials">5.3.4. Create Accessible Course Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility/best_practices_course_content_dev.html#use-best-practices-for-mathematical-content">5.3.5. Use Best Practices for Mathematical Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility/best_practices_course_content_dev.html#use-best-practices-for-custom-content-types">5.3.6. Use Best Practices for Custom Content Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility/best_practices_course_content_dev.html#create-accessible-media">5.3.7. Create Accessible Media</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility/best_practices_course_content_dev.html#use-best-practices-for-html-markup">5.3.8. Use Best Practices for HTML Markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility/best_practices_course_content_dev.html#apply-universal-design-for-learning">5.3.9. Apply Universal Design for Learning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../set_up_course/index.html">6. Setting Up a Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../set_up_course/planning_course_information/index.html">6.1. Planning Course Information</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/planning_course_information/title_number_guidelines.html">6.1.1. Course Title and Number</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/planning_course_information/image_guidelines.html">6.1.2. Images and Videos for a Course or Program</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/planning_course_information/description_guidelines.html">6.1.3. Course Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/planning_course_information/additional_course_information.html">6.1.4. Additional Course Information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../set_up_course/planning_course_run_information/index.html">6.2. Planning Course Run Information</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/planning_course_run_information/staffing.html">6.2.1. Planning Course Staff</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/planning_course_run_information/scheduling.html">6.2.2. Scheduling a Course Run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/planning_course_run_information/additional_course_run_information.html">6.2.3. Additional Course Run Information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../set_up_course/studio_add_course_information/index.html">6.3. Creating a Course</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/studio_add_course_information/studio_course_staffing.html">6.3.1. Adding Course Team Members in Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/studio_add_course_information/creating_new_course.html">6.3.2. Creating a New Course in Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/studio_add_course_information/studio_scheduling.html">6.3.3. Set the Course Run Schedule and Pacing in Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/studio_add_course_information/studio_prerequisites.html">6.3.4. Specifying Prerequisite Courses and Exams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/studio_add_course_information/creating_about_page.html">6.3.5. Creating a Course About Page in Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/studio_add_course_information/studio_creating_certificates.html">6.3.6. Setting Up Certificates in Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/studio_add_course_information/search_course.html">6.3.7. Course Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../set_up_course/studio_add_course_information/custom_courses.html">6.3.8. Creating a Custom Course</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">7. Developing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">7.1. Getting Started with Course Content Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/workflow.html#understanding-course-building-blocks">7.1.1. Understanding Course Building Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/workflow.html#creating-new-course-content">7.1.2. Creating New Course Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/workflow.html#making-course-content-visible-to-students">7.1.3. Making Course Content Visible to Students</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/workflow.html#making-course-content-searchable">7.1.4. Making Course Content Searchable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/workflow.html#id6">7.1.5. Revising Content</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">7.2. Developing Your Course Outline</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_outline.html#open-the-course-outline">7.2.1. Open the Course Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_outline.html#understanding-a-course-outline">7.2.2. Understanding a Course Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_outline.html#navigate-the-course-outline">7.2.3. Navigate the Course Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_outline.html#add-content-in-the-course-outline">7.2.4. Add Content in the Course Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_outline.html#modify-settings-for-objects-in-the-course-outline">7.2.5. Modify Settings for Objects in the Course Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_outline.html#publish-content-from-the-course-outline">7.2.6. Publish Content from the Course Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_outline.html#reorganize-the-course-outline">7.2.7. Reorganize the Course Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_outline.html#delete-content-in-the-course-outline">7.2.8. Delete Content in the Course Outline</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">7.3. Developing Course Sections</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_sections.html#what-is-a-section">7.3.1. What Is a Section?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_sections.html#viewing-sections-in-the-outline">7.3.2. Viewing Sections in the Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_sections.html#sections-and-visibility-to-learners">7.3.3. Sections and Visibility to Learners</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_sections.html#release-statuses-of-sections">7.3.4. Release Statuses of Sections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_sections.html#create-a-section">7.3.5. Create a Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_sections.html#change-a-section-name">7.3.6. Change a Section Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_sections.html#set-a-section-release-date">7.3.7. Set a Section Release Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_sections.html#set-section-highlights-for-highlight-emails">7.3.8. Set Section Highlights for Highlight Emails</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_sections.html#publish-all-units-in-a-section">7.3.9. Publish All Units in a Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_sections.html#hide-a-section-from-learners">7.3.10. Hide a Section from Learners</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_sections.html#delete-a-section">7.3.11. Delete a Section</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">7.4. Developing Course Subsections</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_subsections.html#what-is-a-subsection">7.4.1. What Is a Subsection?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_subsections.html#viewing-subsections-in-the-outline">7.4.2. Viewing Subsections in the Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_subsections.html#subsections-and-visibility-to-learners">7.4.3. Subsections and Visibility to Learners</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_subsections.html#release-statuses-of-subsections">7.4.4. Release Statuses of Subsections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_subsections.html#create-a-subsection">7.4.5. Create a Subsection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_subsections.html#change-a-subsection-name">7.4.6. Change a Subsection Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_subsections.html#set-a-subsection-release-date">7.4.7. Set a Subsection Release Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_subsections.html#set-the-assignment-type-and-due-date-for-a-subsection">7.4.8. Set the Assignment Type and Due Date for a Subsection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_subsections.html#set-problem-results-visibility">7.4.9. Set Problem Results Visibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_subsections.html#publish-all-units-in-a-subsection">7.4.10. Publish All Units in a Subsection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_subsections.html#hiding-a-subsection-from-learners">7.4.11. Hiding a Subsection from Learners</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_subsections.html#delete-a-subsection">7.4.12. Delete a Subsection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">7.5. Developing Course Units</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#what-is-a-unit">7.5.1. What Is a Unit?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#viewing-units-in-the-outline">7.5.2. Viewing Units in the Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#viewing-the-unit-page">7.5.3. Viewing the Unit Page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#viewing-units-as-a-learner">7.5.4. Viewing Units as a Learner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#the-unit-workflow">7.5.5. The Unit Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#unit-publishing-status-and-visibility-to-learners">7.5.6. Unit Publishing Status and Visibility to Learners</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#unit-publishing-statuses">7.5.7. Unit Publishing Statuses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#create-a-unit">7.5.8. Create a Unit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#edit-a-unit">7.5.9. Edit a Unit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#set-access-restrictions-for-a-unit">7.5.10. Set Access Restrictions For a Unit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#preview-a-unit">7.5.11. Preview a Unit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#publish-a-unit">7.5.12. Publish a Unit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#discard-changes-to-a-unit">7.5.13. Discard Changes to a Unit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#view-a-published-unit">7.5.14. View a Published Unit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#hide-a-unit-from-learners">7.5.15. Hide a Unit from Learners</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_units.html#delete-a-unit">7.5.16. Delete a Unit</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">7.6. Developing Course Components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_components.html#what-is-a-component">7.6.1. What is a Component?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_components.html#add-a-component">7.6.2. Add a Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_components.html#edit-a-component">7.6.3. Edit a Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_components.html#set-access-restrictions-for-a-component">7.6.4. Set Access Restrictions for a Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_components.html#duplicate-a-component">7.6.5. Duplicate a Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_components.html#delete-a-component">7.6.6. Delete a Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_components.html#reorganizing-components">7.6.7. Reorganizing Components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/course_components.html#components-that-contain-other-components">7.6.8. Components that Contain Other Components</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">7.7. Controlling Content Visibility and Access</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/controlling_content_visibility.html#release-dates">7.7.1. Release Dates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/controlling_content_visibility.html#unit-publishing-status">7.7.2. Unit Publishing Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/controlling_content_visibility.html#visibility-settings">7.7.3. Visibility Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/controlling_content_visibility.html#access-settings">7.7.4. Access Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/controlling_content_visibility.html#prerequisite-course-subsections">7.7.5. Prerequisite Course Subsections</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/licensing_course.html">7.8. Course Licensing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/licensing_course.html#license-options">7.8.1. License Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/licensing_course.html#set-course-content-licensing-in-studio">7.8.2. Set Course Content Licensing in Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/licensing_course.html#set-video-licensing">7.8.3. Set Video Licensing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/licensing_course.html#learners-view-of-licenses">7.8.4. Learners’ View of Licenses</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">7.9. Testing Your Course Content</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/testing_courseware.html#viewing-published-and-released-content">7.9.1. Viewing Published and Released Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/testing_courseware.html#previewing-draft-content">7.9.2. Previewing Draft Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing_course/testing_courseware.html#viewing-course-content-based-on-roles">7.9.3. Viewing Course Content Based on Roles</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../course_components/index.html">8. Adding Course Components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../course_components/create_html_component.html">8.1. Working with HTML Components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_html_component.html#html-component-overview">8.1.1. HTML Component Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_html_component.html#options-for-editing-html-components">8.1.2. Options for Editing HTML Components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_html_component.html#create-an-html-component">8.1.3. Create an HTML Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_html_component.html#add-a-link-in-an-html-component">8.1.4. Add a Link in an HTML Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_html_component.html#add-an-image-to-an-html-component">8.1.5. Add an Image to an HTML Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_html_component.html#import-latex-code-into-an-html-component">8.1.6. Import LaTeX Code into an HTML Component</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../course_components/create_video.html">8.2. Working with Video Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../course_components/create_discussion.html">8.3. Working with Discussion Components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_discussion.html#overview">8.3.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_discussion.html#create-a-discussion-component">8.3.2. Create a Discussion Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_discussion.html#a-learner-s-view-of-the-discussion">8.3.3. A Learner’s View of the Discussion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../course_components/create_problem.html">8.4. Working with Problem Components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_problem.html#adding-a-problem">8.4.1. Adding a Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_problem.html#the-learner-view-of-a-problem">8.4.2. The Learner View of a Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_problem.html#editing-a-problem-in-studio">8.4.3. Editing a Problem in Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_problem.html#defining-settings-for-problem-components">8.4.4. Defining Settings for Problem Components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_problem.html#including-multiple-questions-in-one-component">8.4.5. Including Multiple Questions in One Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_problem.html#adding-feedback-and-hints-to-a-problem">8.4.6. Adding Feedback and Hints to a Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_problem.html#awarding-partial-credit-for-a-problem">8.4.7. Awarding Partial Credit for a Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_problem.html#problem-randomization">8.4.8. Problem Randomization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/create_problem.html#modifying-a-released-problem">8.4.9. Modifying a Released Problem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../course_components/libraries.html">8.5. Working with Content Libraries</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/libraries.html#content-libraries-overview">8.5.1. Content Libraries Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/libraries.html#create-a-new-library">8.5.2. Create a New Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/libraries.html#edit-a-library">8.5.3. Edit a Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/libraries.html#add-components-to-a-library">8.5.4. Add Components to a Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/libraries.html#view-the-contents-of-a-library">8.5.5. View the Contents of a Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/libraries.html#edit-components-in-a-library">8.5.6. Edit Components in a Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/libraries.html#delete-a-library">8.5.7. Delete a Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/libraries.html#give-other-users-access-to-your-library">8.5.8. Give Other Users Access to Your Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_components/libraries.html#exporting-and-importing-a-library">8.5.9. Exporting and Importing a Library</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../video/index.html">9. Creating and Adding Video Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../video/video_process_overview.html">9.1. Video Process Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../video/prepare_video/index.html">9.2. Preparing a Video</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video/prepare_video/set_up_host.html">9.2.1. Set Up a Hosting Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video/prepare_video/create_video.html">9.2.2. Create a Video</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video/prepare_video/obtain_transcript.html">9.2.3. Obtain a Video Transcript</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../video/upload_video.html">9.3. Upload a Video</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../video/add_video_to_course.html">9.4. Adding a Video to a Course</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video/add_video_to_course.html#add-a-video-and-transcript">9.4.1. Add a Video and Transcript</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../video/additional_video_options.html">9.5. Specifying Additional Video Options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video/additional_video_options.html#enable-video-and-transcript-downloads">9.5.1. Enable Video and Transcript Downloads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video/additional_video_options.html#set-advanced-options">9.5.2. Set Advanced Options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../video/additional_transcript_options.html">9.6. Specifying Additional Transcript Options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video/additional_transcript_options.html#edit-a-video-transcript">9.6.1. Edit a Video Transcript</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video/additional_transcript_options.html#add-a-supplemental-downloadable-transcript">9.6.2. Add a Supplemental Downloadable Transcript</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video/additional_transcript_options.html#add-a-transcript-in-another-language">9.6.3. Add a Transcript in Another Language</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../video/troubleshoot_video.html">9.7. Troubleshooting Video Problems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">10. Adding Exercises and Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">10.1. Problems, Exercises, and Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html#levels-of-support">10.1.1. Levels of Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html#enhancing-your-course-with-additional-exercises-and-tools">10.1.2. Enhancing Your Course with Additional Exercises and Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html#core-problem-types">10.1.3. Core Problem Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html#additional-exercises-and-tools">10.1.4. Additional Exercises and Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html#mobile-ready-problem-types">10.1.5. Mobile-Ready Problem Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html#adding-unsupported-problem-types-and-exercises">10.1.6. Adding Unsupported Problem Types and Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/enable_exercises_tools.html">10.2. Enabling Additional Exercises and Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/enable_exercises_tools.html#enable-an-exercise-or-tool-for-your-course">10.2.1. Enable an Exercise or Tool for Your Course</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">10.3. Annotation Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/annotation.html#enable-annotation-problems">10.3.1. Enable Annotation Problems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/annotation.html#create-an-annotation-problem">10.3.2. Create an Annotation Problem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/calculator.html">10.4. Calculator Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/calculator.html#overview">10.4.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/calculator.html#enable-the-calculator-tool">10.4.2. Enable the Calculator Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">10.5. Checkbox Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/checkbox.html#overview">10.5.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/checkbox.html#adding-a-checkbox-problem">10.5.2. Adding a Checkbox Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/checkbox.html#adding-feedback-to-a-checkbox-problem">10.5.3. Adding Feedback to a Checkbox Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/checkbox.html#adding-hints-to-a-checkbox-problem">10.5.4. Adding Hints to a Checkbox Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/checkbox.html#awarding-partial-credit-in-a-checkbox-problem">10.5.5. Awarding Partial Credit in a Checkbox Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/checkbox.html#checkbox-problem-olx-reference">10.5.6. Checkbox Problem OLX Reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/checkbox.html#advanced-options-for-checkbox-problems">10.5.7. Advanced Options for Checkbox Problems</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">10.6. Chemical Equation Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/chemical_equation.html#create-a-chemical-equation-problem">10.6.1. Create a Chemical Equation Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/chemical_equation.html#chemical-equation-problem-xml">10.6.2. Chemical Equation Problem XML</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">10.7. Circuit Schematic Builder Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html#create-a-circuit-schematic-builder-problem">10.7.1. Create a Circuit Schematic Builder Problem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/completion.html">10.8. Completion Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/completion.html#overview">10.8.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/completion.html#enable-the-completion-tool">10.8.2. Enable the Completion Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/completion.html#add-a-completion-component">10.8.3. Add a Completion Component</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">10.9. Conditional Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/conditional_module.html#format-description">10.9.1. Format description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/conditional_module.html#examples">10.9.2. Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">10.10. Custom JavaScript Display and Grading Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/custom_javascript.html#create-a-custom-javascript-display-and-grading-problem">10.10.1. Create a Custom JavaScript Display and Grading Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/custom_javascript.html#javascript-input-problem-xml">10.10.2. JavaScript Input Problem XML</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">10.11. Drag and Drop Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/drag_and_drop.html#overview-of-drag-and-drop-problems">10.11.1. Overview of Drag and Drop Problems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/drag_and_drop.html#creating-a-drag-and-drop-problem">10.11.2. Creating a Drag and Drop Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/drag_and_drop.html#understanding-the-drag-and-drop-editing-controls">10.11.3. Understanding the Drag and Drop Editing Controls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/drag_and_drop.html#changing-the-visual-style-of-a-drag-and-drop-problem">10.11.4. Changing the Visual Style of a Drag and Drop Problem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop_deprecated.html">10.12. Drag and Drop Problem (Deprecated)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/drag_and_drop_deprecated.html#adding-a-drag-and-drop-problem">10.12.1. Adding a Drag and Drop Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/drag_and_drop_deprecated.html#drag-and-drop-problem-xml">10.12.2. Drag and Drop Problem XML</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/drag_and_drop_deprecated.html#targets-on-draggables">10.12.3. Targets on Draggables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/drag_and_drop_deprecated.html#correct-answer-format">10.12.4. Correct answer format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/drag_and_drop_deprecated.html#grading-logic">10.12.5. Grading logic</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">10.13. Dropdown Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/dropdown.html#overview">10.13.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/dropdown.html#adding-a-dropdown-problem">10.13.2. Adding a Dropdown Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/dropdown.html#adding-feedback-to-a-dropdown-problem">10.13.3. Adding Feedback to a Dropdown Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/dropdown.html#adding-hints-to-a-dropdown-problem">10.13.4. Adding Hints to a Dropdown Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/dropdown.html#dropdown-problem-olx-reference">10.13.5. Dropdown Problem OLX Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">10.14. External Grader</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/external_graders.html#external-grader-workflow">10.14.1. External Grader Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/external_graders.html#external-grader-example">10.14.2. External Grader Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/external_graders.html#external-grader-problem-requirements">10.14.3. External Grader Problem Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/external_graders.html#create-an-external-grader-problem-in-studio">10.14.4. Create an External Grader Problem in Studio</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">10.15. Full Screen Image Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/full_screen_image.html#the-learner-view-of-a-full-screen-image">10.15.1. The Learner View of a Full Screen Image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/full_screen_image.html#create-a-full-screen-image">10.15.2. Create a Full Screen Image</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">10.16. Gene Explorer Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/gene_explorer.html#gene-explorer-code">10.16.1. Gene Explorer Code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">10.17. Google Calendar Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/google_calendar.html#overview">10.17.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/google_calendar.html#embedding-a-google-calendar-in-your-course">10.17.2. Embedding a Google Calendar in Your Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/google_calendar.html#editing-google-calendars">10.17.3. Editing Google Calendars</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">10.18. Google Drive Files Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/google_docs.html#overview">10.18.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/google_docs.html#embedding-a-google-drive-file-in-your-course">10.18.2. Embedding a Google Drive File in Your Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/google_docs.html#editing-google-drive-files">10.18.3. Editing Google Drive Files</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">10.19. Iframe Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/iframe.html#create-an-iframe-tool">10.19.1. Create an IFrame Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">10.20. Image Mapped Input Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/image_mapped_input.html#create-an-image-mapped-input-problem">10.20.1. Create an Image Mapped Input Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/image_mapped_input.html#image-mapped-input-problem-xml">10.20.2. Image Mapped Input Problem XML</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">10.21. LTI Component</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/lti_component.html#overview">10.21.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/lti_component.html#lti-authentication-information">10.21.2. LTI Authentication Information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/lti_component.html#enabling-lti-components-for-a-course">10.21.3. Enabling LTI Components for a Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/lti_component.html#adding-an-lti-component-to-a-course-unit">10.21.4. Adding an LTI Component to a Course Unit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/lti_component.html#lti-component-settings">10.21.5. LTI Component Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">10.22. Math Expression Input Problems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/math_expression_input.html#overview">10.22.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/math_expression_input.html#adding-a-math-expression-input-problem">10.22.2. Adding a Math Expression Input Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/math_expression_input.html#math-expression-input-problem-olx-reference">10.22.3. Math Expression Input Problem OLX Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">10.23. Molecule Editor Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/molecule_editor.html#create-the-molecule-editor">10.23.1. Create the Molecule Editor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">10.24. Molecule Viewer Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/molecule_viewer.html#create-the-molecule-viewer-tool">10.24.1. Create the Molecule Viewer Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">10.25. Multiple Choice Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/multiple_choice.html#overview">10.25.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/multiple_choice.html#adding-a-multiple-choice-problem">10.25.2. Adding a Multiple Choice Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/multiple_choice.html#adding-feedback-to-a-multiple-choice-problem">10.25.3. Adding Feedback to a Multiple Choice Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/multiple_choice.html#adding-hints-to-a-multiple-choice-problem">10.25.4. Adding Hints to a Multiple Choice Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/multiple_choice.html#awarding-partial-credit-in-a-multiple-choice-problem">10.25.5. Awarding Partial Credit in a Multiple Choice Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/multiple_choice.html#multiple-choice-problem-olx-reference">10.25.6. Multiple Choice Problem OLX Reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/multiple_choice.html#advanced-options-for-multiple-choice-problems">10.25.7. Advanced Options for Multiple Choice Problems</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">10.26. Multiple Choice and Numerical Input Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html#create-a-multiple-choice-and-numerical-input-problem">10.26.1. Create a Multiple Choice and Numerical Input Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html#multiple-choice-and-numerical-input-problem-code">10.26.2. Multiple Choice and Numerical Input Problem Code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/notes.html">10.27. Notes Tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">10.28. Numerical Input Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/numerical_input.html#overview">10.28.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/numerical_input.html#adding-a-numerical-input-problem">10.28.2. Adding a Numerical Input Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/numerical_input.html#adding-a-tolerance-multiple-correct-responses-or-a-range">10.28.3. Adding a Tolerance, Multiple Correct Responses, or a Range</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/numerical_input.html#adding-feedback-to-a-numerical-input-problem">10.28.4. Adding Feedback to a Numerical Input Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/numerical_input.html#adding-hints-to-a-numerical-input-problem">10.28.5. Adding Hints to a Numerical Input Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/numerical_input.html#awarding-partial-credit-in-a-numerical-input-problem">10.28.6. Awarding Partial Credit in a Numerical Input Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/numerical_input.html#add-text-after-the-numeric-response-field">10.28.7. Add Text after the Numeric Response Field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/numerical_input.html#numerical-input-problem-olx-reference">10.28.8. Numerical Input Problem OLX Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">10.29. Open Response Assessments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/open_response_assessments/OpenResponseAssessments.html">10.29.1. Introduction to Open Response Assessments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/open_response_assessments/CreateORAAssignment.html">10.29.2. Create an Open Response Assessment Assignment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/open_response_assessments/Manage_ORA_Assignment.html">10.29.3. Managing Open Response Assessment Assignments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/open_response_assessments/Access_ORA_Info.html">10.29.4. Accessing Metrics for ORA Assignments</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/oppia.html">10.30. Oppia Exploration Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/oppia.html#overview">10.30.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/oppia.html#enable-the-oppia-exploration-tool">10.30.2. Enable the Oppia Exploration Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/oppia.html#add-an-oppia-exploration-in-studio">10.30.3. Add an Oppia Exploration in Studio</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/peer_instruction_tool.html">10.31. Peer Instruction Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/peer_instruction_tool.html#assignment-overview">10.31.1. Assignment Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/peer_instruction_tool.html#adding-a-peer-instruction-assignment-in-studio">10.31.2. Adding a Peer Instruction Assignment in Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/peer_instruction_tool.html#reviewing-a-histogram-of-learner-responses">10.31.3. Reviewing a Histogram of Learner Responses</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">10.32. Periodic Table Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/periodic_table.html#create-the-periodic-table-tool">10.32.1. Create the Periodic Table Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll_question.html">10.33. Poll Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/poll_question.html#overview">10.33.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/poll_question.html#enable-the-poll-tool">10.33.2. Enable the Poll Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/poll_question.html#add-a-poll-in-edx-studio">10.33.3. Add a Poll in edX Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/poll_question.html#add-a-poll-in-olx">10.33.4. Add a Poll in OLX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/poll_question.html#editing-published-polls">10.33.5. Editing Published Polls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/poll_question.html#view-poll-results">10.33.6. View Poll Results</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">10.34. Poll Tool for OLX</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/poll.html#terminology">10.34.1. Terminology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/poll.html#create-a-poll">10.34.2. Create a Poll</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/poll.html#format-description">10.34.3. Format description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/poll.html#example">10.34.4. Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">10.35. Problem with Adaptive Hint</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/problem_with_hint.html#create-a-problem-with-an-adaptive-hint">10.35.1. Create a Problem with an Adaptive Hint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/problem_with_hint.html#problem-with-adaptive-hint-xml">10.35.2. Problem with Adaptive Hint XML</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">10.36. Problem Written in LaTeX</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/problem_in_latex.html#create-a-problem-written-in-latex">10.36.1. Create a Problem Written in LaTeX</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">10.37. Protex Protein Builder Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/protein_builder.html#create-the-protein-builder-tool">10.37.1. Create the Protein Builder Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/protein_builder.html#protein-builder-tool-code">10.37.2. Protein Builder Tool Code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/qualtrics.html">10.38. Qualtrics Survey Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/qualtrics.html#add-a-qualtrics-survey-to-your-course">10.38.1. Add a Qualtrics Survey to Your Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/qualtrics.html#view-survey-responses">10.38.2. View Survey Responses</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">10.39. Randomized Content Blocks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#use-components-from-libraries-in-a-course">10.39.1. Use Components from Libraries in a Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#enable-content-libraries">10.39.2. Enable Content Libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#view-the-matching-components-in-a-randomized-content-block">10.39.3. View the Matching Components in a Randomized Content Block</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#editing-components-in-randomized-content-blocks">10.39.4. Editing Components in Randomized Content Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#getting-the-latest-version-of-library-content">10.39.5. Getting the Latest Version of Library Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#preview-the-randomized-content-in-student-view">10.39.6. Preview the Randomized Content in Student View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#view-a-specific-student-s-assigned-problems-from-a-randomized-content-block">10.39.7. View a Specific Student’s Assigned Problems from a Randomized Content Block</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#adjust-grades-for-a-problem-from-a-randomized-content-block">10.39.8. Adjust Grades for a Problem from a Randomized Content Block</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">10.40. Recommender Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html#overview">10.40.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html#enable-the-recommender-tool">10.40.2. Enable the Recommender Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html#add-a-recommender">10.40.3. Add a Recommender</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/staffgraded.html">10.41. Staff Graded Points</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/staffgraded.html#create-a-staff-graded-points-assignment">10.41.1. Create a Staff Graded Points assignment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/survey.html">10.42. Survey Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/survey.html#overview">10.42.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/survey.html#enable-the-survey-tool">10.42.2. Enable the Survey Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/survey.html#add-a-survey-in-edx-studio">10.42.3. Add a Survey in edX Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/survey.html#add-a-survey-in-olx">10.42.4. Add a Survey in OLX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/survey.html#editing-published-surveys">10.42.5. Editing Published Surveys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/survey.html#view-survey-results">10.42.6. View Survey Results</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">10.43. Text Input Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/text_input.html#overview">10.43.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/text_input.html#adding-a-text-input-problem">10.43.2. Adding a Text Input Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/text_input.html#adding-multiple-correct-responses">10.43.3. Adding Multiple Correct Responses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/text_input.html#adding-feedback-to-a-text-input-problem">10.43.4. Adding Feedback to a Text Input Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/text_input.html#adding-hints-to-a-text-input-problem">10.43.5. Adding Hints to a Text Input Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/text_input.html#adding-text-after-the-response-field">10.43.6. Adding Text after the Response Field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/text_input.html#case-sensitivity-and-text-input-problems">10.43.7. Case Sensitivity and Text Input Problems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/text_input.html#response-field-length-in-text-input-problems">10.43.8. Response Field Length in Text Input Problems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/text_input.html#allowing-regular-expressions-as-answers-for-text-input-problems">10.43.9. Allowing Regular Expressions as Answers for Text Input Problems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/text_input.html#text-input-problem-xml-reference">10.43.10. Text Input Problem XML Reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/text_input.html#deprecated-hinting-method">10.43.11. Deprecated Hinting Method</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">10.44. Word Cloud Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/word_cloud.html#enable-the-word-cloud-tool">10.44.1. Enable the Word Cloud Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/word_cloud.html#create-a-word-cloud">10.44.2. Create a Word Cloud</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">10.45. Write-Your-Own-Grader Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/custom_python.html#overview">10.45.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/custom_python.html#create-a-custom-python-evaluated-input-problem-in-studio">10.45.2. Create a Custom Python-Evaluated Input Problem in Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/custom_python.html#script-tag-format">10.45.3. Script Tag Format</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">10.46. Zooming Image Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/zooming_image.html#components-of-a-zooming-image-tool">10.46.1. Components of a Zooming Image Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/zooming_image.html#create-a-zooming-image-tool">10.46.2. Create a Zooming Image Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">10.47. Using MathJax for Mathematics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/mathjax.html#adding-mathjax-to-html-components">10.47.1. Adding MathJax to HTML Components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exercises_tools/mathjax.html#adding-mathjax-to-problem-components">10.47.2. Adding MathJax to Problem Components</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../course_assets/index.html">11. Adding Course Assets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../course_assets/course_files.html">11.1. Adding Files to a Course</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_files.html#the-files-uploads-page">11.1.1. The Files &amp; Uploads Page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_files.html#file-size">11.1.2. File Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_files.html#upload-files">11.1.3. Upload Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_files.html#find-an-uploaded-file">11.1.4. Find an Uploaded File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_files.html#sort-files">11.1.5. Sort Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_files.html#filter-files">11.1.6. Filter Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_files.html#use-an-uploaded-file-inside-or-outside-the-course">11.1.7. Use an Uploaded File Inside or Outside the Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_files.html#lock-a-file">11.1.8. Lock a File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_files.html#delete-a-file">11.1.9. Delete a File</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../course_assets/handouts_updates.html">11.2. Adding Course Updates and Handouts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/handouts_updates.html#add-a-course-update">11.2.1. Add a Course Update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/handouts_updates.html#add-a-course-handout">11.2.2. Add a Course Handout</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../course_assets/pages.html">11.3. Managing the Pages in Your Course</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/pages.html#working-with-the-default-pages">11.3.1. Working with the Default Pages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/pages.html#adding-custom-pages">11.3.2. Adding Custom Pages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/pages.html#hiding-or-showing-the-wiki-or-progress-pages">11.3.3. Hiding or Showing the Wiki or Progress Pages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/pages.html#reorder-the-pages">11.3.4. Reorder the Pages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/pages.html#delete-a-custom-page">11.3.5. Delete a Custom Page</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../course_assets/textbooks.html">11.4. Textbooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/textbooks.html#add-a-textbook">11.4.1. Add a Textbook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/textbooks.html#delete-a-textbook">11.4.2. Delete a Textbook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/textbooks.html#delete-a-chapter">11.4.3. Delete a Chapter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../course_assets/course_wiki.html">11.5. Using the Course Wiki</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_wiki.html#about-the-course-wiki">11.5.1. About the Course Wiki</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_wiki.html#managing-the-course-wiki">11.5.2. Managing the Course Wiki</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_wiki.html#showing-or-hiding-the-wiki">11.5.3. Showing or Hiding the Wiki</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_wiki.html#controlling-access-to-the-wiki">11.5.4. Controlling Access to the Wiki</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_wiki.html#setting-permissions-for-wiki-articles">11.5.5. Setting Permissions for Wiki Articles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_wiki.html#seeding-the-wiki">11.5.6. Seeding the Wiki</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_wiki.html#adding-a-wiki-article">11.5.7. Adding a Wiki Article</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_wiki.html#editing-a-wiki-article">11.5.8. Editing a Wiki Article</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_wiki.html#searching-for-wiki-articles">11.5.9. Searching for Wiki Articles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_wiki.html#managing-versions-of-wiki-articles">11.5.10. Managing Versions of Wiki Articles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_wiki.html#locking-a-wiki-article">11.5.11. Locking a Wiki Article</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_assets/course_wiki.html#deleting-a-wiki-article">11.5.12. Deleting a Wiki Article</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../course_features/index.html">12. Using Enhanced Capabilities In Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../course_features/cohorts/index.html">12.1. Including Learner Cohorts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/cohorts/cohorts_overview.html">12.1.1. Using Cohorts in Your Courses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/cohorts/cohort_config.html">12.1.2. Enabling and Configuring the Cohorts Feature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/cohorts/cohorted_courseware.html">12.1.3. Creating Cohort-Specific Course Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/cohorts/cohorts_setup_discussions.html">12.1.4. Setting up Discussions in Courses with Cohorts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../course_features/diff_content/index.html">12.2. Offering Different Content to Different Learner Groups</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/diff_content/index.html#offering-different-content-to-learners-based-on-their-enrollment-track">12.2.1. Offering Different Content to Learners Based on Their Enrollment Track</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/diff_content/index.html#offering-different-content-to-learners-based-on-cohort">12.2.2. Offering Different Content to Learners Based on Cohort</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../course_features/teams/index.html">12.3. Including Teams</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/teams/teams_setup.html">12.3.1. Using Teams in Your Courses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/teams/teams_learner_experience.html">12.3.2. The Learner’s Experience of Teams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/teams/teams_discussions.html">12.3.3. Managing Team Discussions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../course_features/content_experiments/index.html">12.4. Creating Content Experiments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/content_experiments/content_experiments_overview.html">12.4.1. Overview of Content Experiments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/content_experiments/content_experiments_configure.html">12.4.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/content_experiments/content_experiments_add.html">12.4.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/content_experiments/content_experiments_view.html">12.4.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../course_features/timed_exams.html">12.5. Offering Timed Exams</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/timed_exams.html#overview">12.5.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/timed_exams.html#enable-timed-exams">12.5.2. Enable Timed Exams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/timed_exams.html#set-a-subsection-to-be-timed">12.5.3. Set a Subsection to be Timed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/timed_exams.html#grant-learners-more-time-for-a-timed-or-proctored-exam">12.5.4. Grant Learners More Time for a Timed or Proctored Exam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/timed_exams.html#resuming-an-exam-in-an-error-state">12.5.5. Resuming an Exam in an Error State</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/timed_exams.html#allow-learners-to-retake-a-timed-or-proctored-exam">12.5.6. Allow Learners to Retake a Timed or Proctored Exam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/timed_exams.html#hide-a-timed-exam-after-its-due-date">12.5.7. Hide a Timed Exam After Its Due Date</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../course_features/lti/index.html">12.6. Using Open edX as an LTI Tool Provider</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/lti/lti_reuse_content.html">12.6.1. Reusing Course Content with LTI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/lti/lti_prepare_content.html">12.6.2. Preparing to Reuse Course Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/lti/lti_address_content.html">12.6.3. Determining Content Addresses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/lti/lti_grade_content.html">12.6.4. Grading Remote Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/lti/lti_canvas_example.html">12.6.5. Example: edX as an LTI Provider to Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../course_features/lti/lti_blackboard_example.html">12.6.6. Example: edX as an LTI Provider to Blackboard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../proctored_exams/index.html">13. Proctored Exams</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../proctored_exams/overview.html">13.1. Proctored Exam Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../proctored_exams/proctored_learners.html">13.2. Preparing Learners for Proctored Exams</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../proctored_exams/proctored_learners.html#the-learner-experience-of-proctored-exams">13.2.1. The Learner Experience of Proctored Exams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../proctored_exams/proctored_learners.html#practice-proctored-exams">13.2.2. Practice Proctored Exams</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../proctored_exams/proctored_enabling.html">13.3. Creating Proctored Exams</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../proctored_exams/proctored_enabling.html#enable-proctored-exams">13.3.1. Enable Proctored Exams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../proctored_exams/proctored_enabling.html#create-a-proctored-exam-or-practice-proctored-exam">13.3.2. Create a Proctored Exam or Practice Proctored Exam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../proctored_exams/proctored_enabling.html#specify-exam-rules-and-exceptions">13.3.3. Specify Exam Rules and Exceptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../proctored_exams/proctored_enabling.html#allow-opting-out-of-proctored-exams">13.3.4. Allow Opting Out of Proctored Exams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../proctored_exams/proctored_enabling.html#check-proctoring-results">13.3.5. Check Proctoring Results</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../proctored_exams/CA_online_proctoring_rules_students.html">13.4. Online Proctoring Rules for Learners</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../proctored_exams/CA_online_proctoring_rules_students.html#learner-rules-for-online-proctored-exams">13.4.1. Learner Rules for Online Proctored Exams</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../grading/index.html">14. Establishing a Grading Policy For Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../grading/grade_range.html">14.1. Set the Grade Range</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../grading/grade_range.html#grade-ranges-and-certificates">14.1.1. Grade Ranges and Certificates</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../grading/grace_period.html">14.2. Set the Grace Period</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../grading/configure_assignment_type.html">14.3. Configure the Assignment Types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../grading/configure_assignment_type.html#assignment-type-fields">14.3.1. Assignment Type Fields</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../grading/graded_subsections.html">14.4. Graded Subsections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../grading/learner_view_of_grades.html">14.5. The Learner View of Grades</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">15. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">15.1. Beta Testing a Course</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../releasing_course/beta_testing.html#overview">15.1.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../releasing_course/beta_testing.html#the-beta-testing-process">15.1.2. The Beta Testing Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../releasing_course/beta_testing.html#the-beta-testing-role">15.1.3. The Beta Testing Role</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../releasing_course/beta_testing.html#what-to-test">15.1.4. What to Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../releasing_course/beta_testing.html#how-beta-testers-see-course-content">15.1.5. How Beta Testers See Course Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../releasing_course/beta_testing.html#adding-beta-testers">15.1.6. Adding Beta Testers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../releasing_course/beta_testing.html#reporting-issues-during-a-course">15.1.7. Reporting Issues During a Course</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">15.2. Course Launching Activities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../releasing_course/course_launching.html#course-launch-checklist-in-studio">15.2.1. Course Launch Checklist in Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../releasing_course/course_launching.html#course-launch-checklist-timeline">15.2.2. Course Launch Checklist Timeline</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/export_import_course.html">15.3. Exporting and Importing a Course</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../releasing_course/export_import_course.html#export-a-course">15.3.1. Export a Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../releasing_course/export_import_course.html#course-outline-terminology-in-exported-files">15.3.2. Course Outline Terminology in Exported Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../releasing_course/export_import_course.html#import-a-course">15.3.3. Import a Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../releasing_course/export_import_course.html#work-with-the-tar-gz-file">15.3.4. Work with the .tar.gz File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../manage_live_course/index.html">16. Managing a Running Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../manage_live_course/course_data.html">16.1. Course Information</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/course_data.html#view-basic-course-information">16.1.1. View Basic Course Information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manage_live_course/automatic_email.html">16.2. Automatic Email Messages from the Open edX Platform</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/automatic_email.html#automatic-email-message-text">16.2.1. Automatic Email Message Text</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manage_live_course/bulk_email.html">16.3. Bulk Email Messages from the Course Team</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/bulk_email.html#message-addressing">16.3.1. Message Addressing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/bulk_email.html#composing-email-messages">16.3.2. Composing Email Messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/bulk_email.html#send-an-email-message-to-course-participants">16.3.3. Send an Email Message to Course Participants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/bulk_email.html#use-keywords-in-messages">16.3.4. Use Keywords in Messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/bulk_email.html#message-workflow-states">16.3.5. Message Workflow States</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/bulk_email.html#review-sent-messages">16.3.6. Review Sent Messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/bulk_email.html#email-task-history-report">16.3.7. Email Task History Report</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/bulk_email.html#example-messages-to-learners">16.3.8. Example Messages to Learners</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manage_live_course/course_enrollment.html">16.4. Enrollment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/course_enrollment.html#registration-and-enrollment">16.4.1. Registration and Enrollment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/course_enrollment.html#options-for-enrolling-learners-in-a-course">16.4.2. Options for Enrolling Learners in a Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/course_enrollment.html#enroll-learners-in-a-course">16.4.3. Enroll Learners in a Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/course_enrollment.html#report-learners-not-yet-enrolled">16.4.4. Report Learners Not Yet Enrolled</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_live_course/course_enrollment.html#unenroll-learners-from-a-course">16.4.5. Unenroll Learners from a Course</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manage_live_course/staff_debug_info.html">16.5. Staff Debug Info</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../manage_discussions/index.html">17. Managing Discussions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../manage_discussions/discussions.html">17.1. Creating Course Discussions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/discussions.html#create-course-wide-discussion-topics">17.1.1. Create Course-Wide Discussion Topics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/discussions.html#create-content-specific-discussion-topics">17.1.2. Create Content-Specific Discussion Topics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/discussions.html#understanding-when-learners-can-see-discussion-topics">17.1.3. Understanding When Learners Can See Discussion Topics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/discussions.html#allowing-learners-to-make-anonymous-discussion-posts">17.1.4. Allowing Learners to Make Anonymous Discussion Posts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/discussions.html#discussions-in-the-edx-mobile-app">17.1.5. Discussions in the edX Mobile App</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manage_discussions/running_discussions.html">17.2. Running Course Discussions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/running_discussions.html#understanding-the-elements-of-a-discussion">17.2.1. Understanding the Elements of a Discussion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/running_discussions.html#using-naming-conventions-for-discussion-topics">17.2.2. Using Naming Conventions for Discussion Topics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/running_discussions.html#seeding-discussion-topics">17.2.3. Seeding Discussion Topics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/running_discussions.html#minimizing-thread-proliferation">17.2.4. Minimizing Thread Proliferation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/running_discussions.html#closing-discussions">17.2.5. Closing Discussions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manage_discussions/set_up_divided_discussions.html">17.3. About Divided Discussion Topics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/set_up_divided_discussions.html#what-are-divided-discussions">17.3.1. What Are Divided Discussions?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/set_up_divided_discussions.html#example-dividing-discussion-topics-based-on-enrollment-track">17.3.2. Example: Dividing Discussion Topics Based on Enrollment Track</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/set_up_divided_discussions.html#setting-up-divided-discussions">17.3.3. Setting Up Divided Discussions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/set_up_divided_discussions.html#specify-the-group-type-for-dividing-discussions">17.3.4. Specify The Group Type for Dividing Discussions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/set_up_divided_discussions.html#specify-which-course-wide-discussion-topics-are-divided">17.3.5. Specify Which Course-Wide Discussion Topics are Divided</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/set_up_divided_discussions.html#content-specific-discussion-topics-and-groups">17.3.6. Content-Specific Discussion Topics and Groups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/set_up_divided_discussions.html#specify-that-all-content-specific-discussion-topics-are-divided">17.3.7. Specify that All Content-Specific Discussion Topics Are Divided</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/set_up_divided_discussions.html#specify-that-some-content-specific-discussion-topics-are-divided">17.3.8. Specify That Some Content-Specific Discussion Topics are Divided</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manage_discussions/manage_divided_discussions.html">17.4. Managing Divided Discussion Topics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/manage_divided_discussions.html#overview">17.4.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/manage_divided_discussions.html#finding-out-who-can-see-a-post">17.4.2. Identifying Who Can Read a Post</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/manage_divided_discussions.html#choosing-the-visibility-of-a-post">17.4.3. Choosing the Visibility of a Post</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/manage_divided_discussions.html#viewing-the-posts-of-a-group">17.4.4. Viewing the Posts of a Group</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manage_discussions/moderate_discussions.html">17.5. Moderating Discussions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/moderate_discussions.html#about-discussion-moderation-roles">17.5.1. About Discussion Moderation Roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/moderate_discussions.html#assigning-discussion-moderation-roles">17.5.2. Assigning Discussion Moderation Roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/moderate_discussions.html#provide-guidelines-for-learners">17.5.3. Provide Guidelines for Learners</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/moderate_discussions.html#develop-a-positive-discussion-culture">17.5.4. Develop a Positive Discussion Culture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/moderate_discussions.html#find-questions-and-discussions">17.5.5. Find Questions and Discussions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/moderate_discussions.html#edit-messages">17.5.6. Edit Messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/moderate_discussions.html#delete-messages">17.5.7. Delete Messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/moderate_discussions.html#respond-to-reports-of-misuse">17.5.8. Respond to Reports of Misuse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/moderate_discussions.html#view-profile-information-for-discussion-participants">17.5.9. View Profile Information for Discussion Participants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/moderate_discussions.html#block-users">17.5.10. Block Users</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../manage_discussions/discussion_guidance_moderators.html">17.6. Guidance for Discussion Moderators</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/discussion_guidance_moderators.html#responsibilities">17.6.1. Responsibilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/discussion_guidance_moderators.html#qualities-of-good-discussion-moderators">17.6.2. Qualities of Good Discussion Moderators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/discussion_guidance_moderators.html#best-practices-for-discussion-moderation">17.6.3. Best Practices for Discussion Moderation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage_discussions/discussion_guidance_moderators.html#guidelines-for-specific-types-of-posts">17.6.4. Guidelines for Specific Types of Posts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../student_progress/index.html">18. Managing Learner Progress and Grades</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../student_progress/course_student.html">18.1. Learner Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/course_student.html#guidance-for-working-with-personal-information">18.1.1. Guidance for Working with Personal Information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/course_student.html#accessing-learner-data">18.1.2. Accessing Learner Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/course_student.html#accessing-anonymized-learner-ids">18.1.3. Accessing Anonymized Learner IDs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../student_progress/course_answers.html">18.2. Answer Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/course_answers.html#learner-answer-submissions">18.2.1. Learner Answer Submissions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/course_answers.html#student-answer-distribution">18.2.2. Student Answer Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../student_progress/course_grades.html">18.3. Learner Grades and Grading</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/course_grades.html#review-how-grading-is-configured-for-your-course">18.3.1. Review How Grading Is Configured for Your Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/course_grades.html#generate-a-grade-report-for-all-learners-in-a-course">18.3.2. Generate a Grade Report for All Learners in a Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/course_grades.html#generate-a-problem-grade-report-for-all-learners-in-a-course">18.3.3. Generate a Problem Grade Report for All Learners in a Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/course_grades.html#review-learner-grades-on-the-instructor-dashboard">18.3.4. Review Learner Grades on the Instructor Dashboard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/course_grades.html#override-learner-subsection-scores-in-bulk">18.3.5. Override Learner Subsection Scores in Bulk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/course_grades.html#per-learner-interventions-report">18.3.6. Per-Learner Interventions Report</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/course_grades.html#check-the-progress-of-a-specific-learner">18.3.7. Check the Progress of a Specific Learner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/course_grades.html#grant-due-date-extensions-for-a-specific-learner">18.3.8. Grant Due Date Extensions for a Specific Learner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/course_grades.html#adjust-grades-for-one-or-all-learners">18.3.9. Adjust Grades for One or All Learners</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../student_progress/certificate_data.html">18.4. Obtaining Certificate Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/certificate_data.html#access-certificate-data">18.4.1. Access Certificate Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/certificate_data.html#columns-in-the-certificate-report">18.4.2. Columns in the Certificate Report</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../student_progress/checking_student_progress.html">18.5. Ending a Course</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/checking_student_progress.html#sending-a-farewell-message">18.5.1. Sending a Farewell Message</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/checking_student_progress.html#assigning-final-grades">18.5.2. Assigning Final Grades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../student_progress/checking_student_progress.html#issuing-certificates">18.5.3. Issuing Certificates</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../rerun_course/index.html">19. Re-running Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../rerun_course/course_rerun.html">19.1. Re-running a Course</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../rerun_course/course_rerun.html#data-duplicated-when-you-re-run-a-course">19.1.1. Data Duplicated When You Re-Run a Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rerun_course/course_rerun.html#re-run-a-course">19.1.2. Re-Run a Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rerun_course/course_rerun.html#update-the-new-course">19.1.3. Update the New Course</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">20. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">20.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">20.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">20.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">20.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">20.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">20.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">20.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">20.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">20.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">20.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">20.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">20.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">20.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">20.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">20.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">20.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">20.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">20.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">20.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">20.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">20.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">20.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course: Lilac Release</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href=""><span class="section-number">2. </span>Getting Started</a></li>
+  <li class="wy-breadcrumbs-aside"><a href="https://open.edx.org/getting-help" target="_blank">Get Help</a> or<a href="https://docs.google.com/forms/d/1T5QGnYb_QnQoMO7T_eatq02miPTY40WVe3cgGphNAdY/viewform?entry.1952574704&entry.241692674=Building%20and%20Running%20an%20Open%20edX%20Course%3A%20Lilac%20Release%3A%20getting_started/index" target="_blank">Give Doc Feedback</a>
+  </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="getting-started">
+<span id="getting-started-index"></span><h1><span class="section-number">2. </span>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="CA_get_started_Studio.html">2.1. Getting Started with Studio</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CA_get_started_Studio.html#what-is-studio">2.1.1. What Is Studio?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CA_get_started_Studio.html#what-is-the-lms">2.1.2. What Is the LMS?</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="CA_get_started_Studio.html" class="btn btn-neutral float-right" title="2.1. Getting Started with Studio"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../front_matter/browsers.html" class="btn btn-neutral" title="1.3. edX Browser Support"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p style="font-size: 85%">
+      Copyright &copy; 2021, edX Inc.
+    <br/>
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+    <br/>
+    These works by <a xmlns:cc="http://creativecommons.org/ns#" href="http://open.edx.org" property="cc:attributionName" rel="cc:attributionURL">edX Inc.</a>
+    are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

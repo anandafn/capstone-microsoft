@@ -1,0 +1,698 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open edX packaged by Bitnami for Microsoft Azure</title>
+
+    <meta name="description" content="">
+
+    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="twitter:card" content="summary">
+    
+    <meta name="twitter:title" content="Open edX packaged by Bitnami for Microsoft Azure">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:title" content="Open edX packaged by Bitnami for Microsoft Azure">
+    <meta property="og:type" content="documentation">
+    <meta property="og:description" content="">
+    <meta property="article:published_time" content="2021-11-10" />
+    <meta name="addsearch-custom-field" content="app=edx"/>
+    <meta name="addsearch-custom-field" content="type=apps"/>
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1874455-2"></script>
+    <script type="text/plain" class="optanon-category-C0002">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-1874455-2', { 'page_path': location.pathname + location.search + location.hash });
+    </script>
+    <script type="text/plain" class="optanon-category-C0002">
+      (function(h,o,t,j,a,r){h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};h._hjSettings={hjid:650911,hjsv:6};a=o.getElementsByTagName('head')[0];r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <link href='https://use.typekit.net/iwb8jlp.css' media="screen" rel="stylesheet">
+    <link href='//d1d5nb8vlsbujg.cloudfront.net/hex/3.1.3/hex.min.css' media="screen" rel="stylesheet">
+
+<link rel="stylesheet" href="https://docs.bitnami.com/css/bds.2cdeeab4db04faea3656df6e70e89763398a08c0949f1e5209f44d4cd8d174f9.css" integrity="sha256-LN7qtNsE&#43;uo2Vt9ucOiXYzmKCMCUnx5SCfRNTNjRdPk=" media="screen">
+
+    <script src='//d1d5nb8vlsbujg.cloudfront.net/hex/3.1.3/hex.min.js'></script>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"></script>
+
+
+
+<script src="https://docs.bitnami.com/js/bds.min.73982bac5b9bd2a58bdd20f88b743eb785f29d30e96583ff6cfd7d8376ba19d5.js"></script>
+
+
+    <link href='https://docs.bitnami.com/images/img/favicon.png' rel='shortcut icon'>
+    <link rel="alternate" type="application/rss+xml" title="Bitnami Documentation" href="https://docs.bitnami.com/index.xml"/>
+  </head>
+
+  <body class="azure apps">
+
+    <div class="addsearch__index" data-addsearch="include">azureedx</div>
+
+    
+    <div class="topnav container topnav-no-hero headbloc">
+  <header class="header">
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script=269e5a8e-d0b1-4d7a-ad7a-d8bdf8013fea></script>
+    
+    <script type="text/javascript">
+      
+      
+      
+      
+      
+      
+      function OptanonWrapper() {
+        
+        var events = window.dataLayer.filter(function(element) {
+          return element.event === "OneTrustGroupsUpdated" && element.OnetrustActiveGroups != null;
+        });
+
+        
+        { window.dataLayer.push({ event: 'OneTrustGroupsUpdated' }); }
+
+        if (events.length > 0) {
+          var latestEvent = events[events.length - 1];
+          var previousEvent = events.length === 1 ? latestEvent : events[events.length - 2];
+
+          
+          if (latestEvent.OnetrustActiveGroups != previousEvent.OnetrustActiveGroups) {
+            location.reload();
+          }
+        }
+      }
+    </script>
+    
+    <div class="header__logo">
+      <a href="https://bitnami.com"><img alt="Bitnami by VMware logo" src="https://docs.bitnami.com/images/logo.svg"/></a>
+    </div>
+    <nav class="header__nav">
+      <button aria-expanded="false" aria-haspopup="true" aria-label="Toggle menu" class="header__nav__hamburguer">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <ul class="header__nav__menu" role="menubar">
+        <li>
+          <a class="header__nav__menu__item" role="menuitem" href="https://bitnami.com/stacks">Applications</a>
+        </li>
+        <li>
+          <a aria-expanded="false" aria-haspopup="true" class="header__nav__menu__item" href="#" role="menuitem" tabindex="0">Kubernetes</a>
+          <ul aria-label="Kubernetes" class="header__nav__submenu header__nav__kubernetes" role="menu" aria-expanded="false">
+            <div class="header__nav__list">
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://kubeapps.com/" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Kubeapps</h3>
+      
+        <p>Your Application Dashboard for Kubernetes</p>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://docs.bitnami.com/kubernetes/" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Kubernetes Tutorials</h3>
+      
+        <p>Move Your Containers to Production</p>
+      
+    </div>
+  </a>
+</li>
+
+              
+            </div>
+            <div class="header__nav__kubernetes__others">
+              
+                <li role="none">
+  <a role="menuitem" class="header__nav__kubernetes__other" href="https://github.com/bitnami-labs/sealed-secrets" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+    Sealed Secrets
+  </a>
+</li>
+
+              
+                <li role="none">
+  <a role="menuitem" class="header__nav__kubernetes__other" href="https://kubeless.io/" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+    Kubeless
+  </a>
+</li>
+
+              
+                <li role="none">
+  <a role="menuitem" class="header__nav__kubernetes__other" href="https://github.com/ksonnet/kubecfg" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+    Kubecfg
+  </a>
+</li>
+
+              
+                <li role="none">
+  <a role="menuitem" class="header__nav__kubernetes__other" href="https://github.com/bitnami/charts" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-disc"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+    Helm Charts
+  </a>
+</li>
+
+              
+              <li role="none">
+                <a role="menuitem" href="https://bitnami.com/kubernetes" class="header__nav__kubernetes__all" target="_blank" rel="noopener noreferrer">See all projects</a>
+              </li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <a aria-expanded="false" aria-haspopup="true" class="header__nav__menu__item" href="#" role="menuitem" tabindex="0">Developers</a>
+          <ul aria-label="Developers" class="header__nav__submenu header__nav__developers" role="menu" aria-expanded="false">
+            <div class="header__nav__list">
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://docs.bitnami.com/">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Documentation</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none" class='header-hide-mobile'>
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://docs.bitnami.com/tutorials" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Tutorials</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/support" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Support</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://github.com/bitnami" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Open Source</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+                
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/careers" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>We&#39;re hiring</h3>
+      
+    </div>
+  </a>
+</li>
+
+              
+            </div>
+            <div class="header__nav__articles">
+              <h3>Latest articles</h3>
+              <ul>
+                
+                  <li><a href="https://engineering.bitnami.com/articles/we-ve-moved-discover-the-new-bitnami-tutorials-site.html" target="_blank" rel="noopener">We&#39;ve moved! - Discover the new Bitnami Tutorials site</a></li>
+                
+                  <li><a href="https://engineering.bitnami.com/articles/adding-grafana-plugins-and-configuring-datasources-in-bkpr.html" target="_blank" rel="noopener">Adding Grafana plugins and configuring data sources in BKPR</a></li>
+                
+                  <li><a href="https://engineering.bitnami.com/articles/the-road-to-production-ready-charts.html" target="_blank" rel="noopener">The road to production ready charts</a></li>
+                
+              </ul>
+              <a href="https://engineering.bitnami.com" class="header__nav__articles__all" target="_blank" rel="noopener">Read all articles</a>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <a aria-expanded="false" aria-haspopup="true" class="header__nav__menu__item" href="#" role="menuitem" tabindex="0">Company</a>
+          <ul aria-label="Company" class="header__nav__submenu header__nav__company" role="menu" aria-expanded="false">
+            <div class="header__nav__company__links">
+              <div class="header__nav__list">
+                
+                  
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/resources" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Resources</h3>
+      
+    </div>
+  </a>
+</li>
+
+                
+                  
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/news" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Newsroom</h3>
+      
+    </div>
+  </a>
+</li>
+
+                
+              </div>
+              <div class="header__nav__list">
+                
+                  
+  <li role="none">
+
+
+  
+    <a class="header__nav__list__item" role="menuitem" href="https://bitnami.com/careers" target="_blank" rel="noopener noreferrer">
+  
+    
+    <div class="header__nav__list__item__info">
+      <h3>Careers</h3>
+      
+    </div>
+  </a>
+</li>
+
+                
+              </div>
+            </div>
+            <div class="header__nav__company__contact">
+              Do you want to talk?
+              <a role="menuitem" href="https://bitnami.com/contact" target="_blank" rel="noopener noreferrer">Contact Us</a>
+            </div>
+          </ul>
+        </li>
+        <div class='tocify header__nav__menu__toc'></div>
+      </ul>
+
+      
+      <div class="header__nav__user">
+        <div class="search search-overlay margin-t-small">
+          <div class="input-group type-small">
+            <div class="search__input">
+              <input type="search" name="q" autocomplete="on" placeholder="Search" />
+            </div>
+            
+          </div>
+          <div class='search__results elevation-2 padding-big'></div>
+        </div>
+      </div>
+      
+
+    </nav>
+  </header>
+</div>
+
+
+<main>
+  <section class="category">
+    <div class="container">
+    <nav class="breadcrumb margin-t-big">
+  
+  
+    
+  
+    
+  
+    
+  
+  
+  <a href="https://docs.bitnami.com/">Bitnami Documentation</a> &gt;
+  
+
+  
+  
+  <a href="https://docs.bitnami.com/azure/">Microsoft Azure</a> &gt;
+  
+
+  
+  
+  <a href="https://docs.bitnami.com/azure/apps/">Bitnami Stacks for Microsoft Azure</a> &gt;
+  
+
+  
+  
+  <a href="https://docs.bitnami.com/azure/apps/edx/">Open edX packaged by Bitnami for Microsoft Azure</a>
+  
+
+</nav>
+
+
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div>
+
+<div class="container">
+  
+    
+  <a href="https://bitnami.com/stack/edx/cloud/" class="button button-action float-r">Launch this Stack</a>
+  
+  <h2 class="title platform-azure">Open edX packaged by Bitnami for Microsoft Azure</h2>
+  <p><p>Open edX is an open source online learning platform used by universities and corporations around the world to deliver courses customized to meet the specific needs of their students.</p>
+</p>
+</div>
+
+<div class='container margin-t-normal margin-b-enormous'>
+  <div class='row collapse-on-phone-landscape collapse-on-phone Category__Categories'>
+
+    
+    
+    <div class='col-4 padding-small'>
+      <div class='category__Category padding-big'>
+      <h4 class="margin-t-reset">
+      Getting started
+      </h4>
+      <ul class='padding-l-reset remove-style'>
+        
+        <li><a href="https://docs.bitnami.com/azure/apps/edx/get-started/first-steps/">Obtain application and server credentials</a></li>
+        
+        <li><a href="https://docs.bitnami.com/azure/apps/edx/get-started/find-credentials-link-mongodb/">Obtain MongoDB root credentials</a></li>
+        
+        <li><a href="https://docs.bitnami.com/azure/apps/edx/get-started/find-credentials-link-mysql/">Obtain MySQL credentials</a></li>
+        
+        <li><a href="https://docs.bitnami.com/azure/apps/edx/get-started/understand-default-ports/">Understand the default port configuration</a></li>
+        
+      </ul>
+      
+      <p class='text-c margin-reset'>
+        <a class="button button-accent" href="https://docs.bitnami.com/azure/apps/edx/get-started/">Check all <b>16</b> articles</a>
+      </p>
+      
+
+      </div>
+    </div>
+    
+    
+    
+    <div class='col-4 padding-small'>
+      <div class='category__Category padding-big'>
+      <h4 class="margin-t-reset">
+      Configuration
+      </h4>
+      <ul class='padding-l-reset remove-style'>
+        
+        <li><a href="https://docs.bitnami.com/azure/apps/edx/configuration/configure-smtp/">Configure SMTP for outbound emails</a></li>
+        
+        <li><a href="https://docs.bitnami.com/azure/apps/edx/configuration/change-language/">Modify the interface language</a></li>
+        
+        <li><a href="https://docs.bitnami.com/azure/apps/edx/configuration/create-database-mariadb/">Create a new MariaDB database and user</a></li>
+        
+        <li><a href="https://docs.bitnami.com/azure/apps/edx/configuration/create-database-mysql/">Create a new MySQL database and user</a></li>
+        
+      </ul>
+      
+      <p class='text-c margin-reset'>
+        <a class="button button-accent" href="https://docs.bitnami.com/azure/apps/edx/configuration/">Check all <b>16</b> articles</a>
+      </p>
+      
+
+      </div>
+    </div>
+    
+    
+    
+    <div class='col-4 padding-small'>
+      <div class='category__Category padding-big'>
+      <h4 class="margin-t-reset">
+      Administration
+      </h4>
+      <ul class='padding-l-reset remove-style'>
+        
+        <li><a href="https://docs.bitnami.com/azure/apps/edx/administration/control-services/">Start or stop services</a></li>
+        
+        <li><a href="https://docs.bitnami.com/azure/apps/edx/administration/change-reset-password-mariadb/">Modify the default MariaDB administrator password</a></li>
+        
+        <li><a href="https://docs.bitnami.com/azure/apps/edx/administration/change-reset-password-mysql/">Modify the MySQL administrator password</a></li>
+        
+        <li><a href="https://docs.bitnami.com/azure/apps/edx/administration/change-reset-password/">Modify the default MongoDB root password</a></li>
+        
+      </ul>
+      
+      <p class='text-c margin-reset'>
+        <a class="button button-accent" href="https://docs.bitnami.com/azure/apps/edx/administration/">Check all <b>45</b> articles</a>
+      </p>
+      
+
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+<hr class='separator-50 margin-v-bigger'>
+
+<div class='container container-tiny'>
+  <p class='margin-t-reset text-c'>
+  Need more help? Find below detailed instructions for solving complex issues.
+  </p>
+</div>
+
+
+
+
+
+<div class='container margin-t-big margin-b-giant'>
+  <div class='row collapse-on-phone-landscape collapse-on-phone'>
+
+    
+    <div class='col-12 padding-small text-c'>
+      <h5 class="margin-t-reset">Troubleshooting</h5>
+      <p>
+        Guides to identify and solve common issues
+      </p>
+      <p class='maring-t-big margin-b-reset'>
+        
+        <a class="button button-default" href="https://docs.bitnami.com/azure/apps/edx/troubleshooting">Read more</a>
+        
+      </p>
+    </div>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+  </div>
+</div>
+
+
+
+
+  </section>
+</main>
+
+
+
+    <footer class='footer bg-dark type-color-reverse-anchor-reset'>
+  <div class='container padding-v-bigger'>
+    <div class='row collapse-b-desktop'>
+      <div class='col-3 footer__copyright'>
+        <h4 class="inverse">
+          <img src="https://d33np9n32j53g7.cloudfront.net/assets/logos/bitnami-by-vmware-dark-bg.svg" alt="Bitnami by VMware Logo" class=logo />
+        </h4>
+        <a href="https://twitter.com/Bitnami" class="socialIcon margin-r-small"><svg role=img aria-label="See the Twitter Profile of Bitnami" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+          <title>twitter</title>
+          <circle fill=currentColor cx=27 cy=27 r=27 />
+          <path d="M14 35.618A15.166 15.166 0 0 0 22.177 38c9.904 0 15.498-8.313 15.162-15.77A10.761 10.761 0 0 0 40 19.485c-.957.422-1.985.707-3.063.834a5.314 5.314 0 0 0 2.344-2.932 10.729 10.729 0 0 1-3.386 1.287A5.344 5.344 0 0 0 32 17c-3.442 0-5.973 3.193-5.195 6.51a15.17 15.17 0 0 1-10.994-5.54 5.288 5.288 0 0 0 1.65 7.078 5.33 5.33 0 0 1-2.417-.663c-.057 2.456 1.714 4.753 4.279 5.265-.751.204-1.573.25-2.408.09a5.33 5.33 0 0 0 4.982 3.683A10.767 10.767 0 0 1 14 35.618" fill=currentColor />
+        </svg>
+        </a><a href="https://github.com/bitnami" class="socialIcon margin-r-small"><svg role=img aria-label="See the Github Profile of Bitnami" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+          <title>github</title>
+          <circle fill=currentColor cx=27 cy=27 r=27 />
+          <path d="M27.5 14C20.044 14 14 19.968 14 27.33c0 5.888 3.868 10.885 9.233 12.647.675.122.921-.289.921-.642 0-.317-.011-1.155-.018-2.268-3.755.806-4.547-1.786-4.547-1.786-.614-1.54-1.5-1.95-1.5-1.95-1.225-.827.094-.81.094-.81 1.355.094 2.067 1.373 2.067 1.373 1.204 2.038 3.16 1.45 3.93 1.108.122-.861.47-1.449.856-1.782-2.997-.336-6.149-1.48-6.149-6.588 0-1.455.526-2.644 1.39-3.576-.14-.337-.603-1.693.132-3.527 0 0 1.133-.36 3.712 1.366a13.085 13.085 0 0 1 3.38-.449c1.146.005 2.301.153 3.38.449 2.577-1.725 3.708-1.366 3.708-1.366.737 1.834.273 3.19.134 3.527.865.932 1.388 2.121 1.388 3.576 0 5.12-3.156 6.248-6.164 6.578.485.411.917 1.225.917 2.468 0 1.782-.017 3.22-.017 3.657 0 .356.243.77.928.64C37.135 38.21 41 33.218 41 27.33 41 19.968 34.955 14 27.5 14" fill=currentColor />
+        </svg>
+        </a><a href="https://www.youtube.com/user/bitrock5" class="socialIcon margin-r-small"><svg role=img aria-label="See the Youtube Profile of Bitnami" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+          <title>youtube</title>
+          <circle fill=currentColor cx=27 cy=27 r=27 />
+          <path d="M24.2 31.286v-8.572L31.474 27 24.2 31.286zm16.215-11.163a3.543 3.543 0 0 0-2.476-2.526C35.756 17 27 17 27 17s-8.755 0-10.938.597a3.544 3.544 0 0 0-2.476 2.526C13 22.351 13 27 13 27s0 4.649.585 6.877a3.543 3.543 0 0 0 2.476 2.526C18.244 37 27 37 27 37s8.756 0 10.94-.597a3.543 3.543 0 0 0 2.475-2.526C41 31.649 41 27 41 27s0-4.649-.585-6.877z" fill=currentColor />
+        </svg>
+        </a><a href="https://www.linkedin.com/company/bitnami" class=socialIcon><svg role=img aria-label="See the LinkedIn Profile of Bitnami" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+          <title>linkedin</title>
+          <circle fill=currentColor cx=27 cy=27 r=27 />
+          <path d="M20.6 17.8c0 1.542-1.253 2.8-2.8 2.8S15 19.35 15 17.8c0-1.542 1.253-2.8 2.8-2.8s2.8 1.258 2.8 2.8zm0 5.2h-4.8v16h4.8V23zm7.889-.303H23.8V39h4.689v-8.553c0-2.295 1.024-3.656 2.979-3.656 1.802 0 2.666 1.309 2.666 3.656V39H39V28.676c0-4.364-2.395-6.476-5.755-6.476-3.351 0-4.765 2.697-4.765 2.697v-2.2h.009z" fill=currentColor />
+        </svg>
+        </a><p class='type-color-gray type-small'>
+          &#169; 2021 Bitnami | All Rights Reserved.
+        </p>
+      </div>
+      <div class="col-9">
+        <div class='row collapse-3-on-phone-land collapse-2-on-phone'>
+          <div class="col-2">
+            <ul class='remove-style padding-reset'>
+              <h3>Products</h3>
+              
+                <li><a href="https://bitnami.com/stacks">Application Catalog</a></li>
+              
+              <li>
+                <a 
+                  href="https://tanzu.vmware.com/application-catalog"
+                  target="_blank"
+                  aria-label="Open in new tab"
+                >
+                  VMware App Catalog
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Projects</h3>
+              <li><a href="https://bitnami.com/projects/kubeapps-and-bkpr">Kubeapps + BKPR</a></li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Solutions</h3>
+              <li><a href="https://bitnami.com/kubernetes">Kubernetes</a></li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Company</h3>
+              <li><a href="https://bitnami.com/careers">Careers</a></li>
+              <li><a href="https://bitnami.com/resources">Resources</a></li>
+              <li><a href="https://bitnami.com/news">News</a></li>
+              <li><a href="https://bitnami.com/contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Legal</h3>
+              <li><a href="https://www.vmware.com/help/legal.html">Terms of Use</a></li>
+              <li><a href="https://bitnami.com/trademark">Trademark</a></li>
+              <li><a href="https://www.vmware.com/help/privacy.html">Privacy</a></li>
+              <li><a href="https://www.vmware.com/help/privacy/california-privacy-rights.html">Your California Privacy Rights</a></li>
+            </ul>
+          </div>
+          <div class=col-2>
+            <ul class='remove-style padding-reset'>
+              <h3>Support</h3>
+              <li><a href="https://community.bitnami.com">Community</a></li>
+              <li><a href="https://bitnami.com/resources/webinars">Webinars</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script>build_search_menu('azure', 'edx', 'apps')</script>
+    
+  </body>
+</html>

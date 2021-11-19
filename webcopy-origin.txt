@@ -1,0 +1,804 @@
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\index.htm
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/favicon.03ffbbf95a0d.ico
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\favicon.03ffbbf95a0d.ico
+Content Type: image/x-icon
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/css/lms-style-vendor.68e48093f5dd.css
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\css\lms-style-vendor.68e48093f5dd.css
+Content Type: text/css
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/css/lms-main-v1.5f06a95d4cfd.css
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\css\lms-main-v1.5f06a95d4cfd.css
+Content Type: text/css
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/register?next=%2F
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\register.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/login?next=%2F
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\login-1.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/courses/course-v1:edX+DemoX+Demo_Course/about
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\courses\course-v1edX DemoX Demo_Course\about.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/about
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\about.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/blog
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\blog.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/donate
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\donate.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/privacy
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\privacy.html
+Content Type: text/html
+
+Uri: https://www.edx.org/?utm_medium=affiliate_partner&utm_source=opensource-partner&utm_content=open-edx-partner-footer-link&utm_campaign=open-edx-footer
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\index-1.htm
+Content Type: text/html
+
+Uri: https://open.edx.org/
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\index-2.htm
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/bitnami/index.html
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\bitnami\index.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/js/i18n/en/djangojs.2623d59dd64d.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\js\i18n\en\djangojs.2623d59dd64d.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/js/ie11_find_array.bd1c6dc7a133.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\js\ie11_find_array.bd1c6dc7a133.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/js/lms-main_vendor.3c3c9a2604d6.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\js\lms-main_vendor.3c3c9a2604d6.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/js/lms-application.0e3fae472a20.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\js\lms-application.0e3fae472a20.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/bundles/commons.a1c39622202e87421695.b825c6a670e7.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\bundles\commons.a1c39622202e87421695.b825c6a670e7.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/lms/js/require-config.38226099c6ad.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\lms\js\require-config.38226099c6ad.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/logo.b6c374d66d57.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\logo.b6c374d66d57.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/asset-v1:edX+DemoX+Demo_Course+type@asset+block@images_course_image.jpg
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\asset-v1edX DemoX Demo_Course type@asset block@images_course_image.jpg
+Content Type: image/jpeg
+
+Uri: http://20.210.124.230/static/images/logo.b6c374d66d57.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\logo.b6c374d66d57-1.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/js/vendor/noreferrer.aa62a3e70ffa.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\js\vendor\noreferrer.aa62a3e70ffa.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/js/utils/navigation.08930e16ab3d.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\js\utils\navigation.08930e16ab3d.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/js/header/header.309a1243e175.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\js\header\header.309a1243e175.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/js/src/jquery_extend_patch.54dddef28d15.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\js\src\jquery_extend_patch.54dddef28d15.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/bitnami/images/close.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\bitnami\images\close.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/bitnami/images/corner-logo.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\bitnami\images\corner-logo.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/bitnami/banner.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\bitnami\banner.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/fonts/vendor/fontawesome-webfont.25a32416abee.eot?v=4.6.3
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\fonts\vendor\fontawesome-webfont.25a32416abee.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/fonts/vendor/fontawesome-webfont.25a32416abee.eot?
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\fonts\vendor\fontawesome-webfont.25a32416abee-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/fonts/vendor/fontawesome-webfont.e6cf7c6ec7c2.woff2?v=4.6.3
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\fonts\vendor\fontawesome-webfont.e6cf7c6ec7c2.woff2
+Content Type: font/woff2
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/fonts/vendor/fontawesome-webfont.c8ddf1e5e5bf.woff?v=4.6.3
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\fonts\vendor\fontawesome-webfont.c8ddf1e5e5bf.woff
+Content Type: font/woff
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/fonts/vendor/fontawesome-webfont.1dc35d25e61d.ttf?v=4.6.3
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\fonts\vendor\fontawesome-webfont.1dc35d25e61d.ttf
+Content Type: font/ttf
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/fonts/vendor/fontawesome-webfont.d7c639084f68.svg?v=4.6.3
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\fonts\vendor\fontawesome-webfont.d7c639084f68.svg
+Content Type: image/svg+xml
+
+Uri: https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\css.css
+Content Type: text/css
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/fonts/CreativeCommons/cc.1e88b5e25694.eot
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\fonts\CreativeCommons\cc.1e88b5e25694.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/fonts/CreativeCommons/cc.4056dea56c31.woff
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\fonts\CreativeCommons\cc.4056dea56c31.woff
+Content Type: font/woff
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/fonts/CreativeCommons/cc.ae5bfe84d5e1.ttf
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\fonts\CreativeCommons\cc.ae5bfe84d5e1.ttf
+Content Type: font/ttf
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/fonts/CreativeCommons/cc.5d1b3e457ec3.svg
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\fonts\CreativeCommons\cc.5d1b3e457ec3.svg
+Content Type: image/svg+xml
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/programs/xseries-icon.517989d98885.svg
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\programs\xseries-icon.517989d98885.svg
+Content Type: image/svg+xml
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/programs/micromasters-icon.eeed247d5c89.svg
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\programs\micromasters-icon.eeed247d5c89.svg
+Content Type: image/svg+xml
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/bg-footer-divider.1aab2089decb.jpg
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\bg-footer-divider.1aab2089decb.jpg
+Content Type: image/jpeg
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/homepage-hero-video-thumb.182306c70abe.jpg
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\homepage-hero-video-thumb.182306c70abe.jpg
+Content Type: image/jpeg
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/icon-sm-verified.d8923fc267da.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\icon-sm-verified.d8923fc267da.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/edx-theme/edx-background-banner-account.3c2aa612edd3.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\edx-theme\edx-background-banner-account.3c2aa612edd3.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/opencourseware.166b4100e393.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\opencourseware.166b4100e393.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/link-icon.631337d37249.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\link-icon.631337d37249.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/bullet-closed.bc57a77c0245.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\bullet-closed.bc57a77c0245.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/bullet-open.72845175fef7.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\bullet-open.72845175fef7.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/icon-sm-professional.f80f246d188f.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\icon-sm-professional.f80f246d188f.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/verified-ribbon.2a7eb60ed330.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\verified-ribbon.2a7eb60ed330.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/certificates/audit.24fb9e64fdae.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\certificates\audit.24fb9e64fdae.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/certificates/honor.24fb9e64fdae.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\certificates\honor.24fb9e64fdae.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/certificates/verified.24fb9e64fdae.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\certificates\verified.24fb9e64fdae.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/images/certificates/professional.24fb9e64fdae.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\images\certificates\professional.24fb9e64fdae.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/login?next=/dashboard
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\login.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/js/lms-base-vendor.188b06b0a06d.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\js\lms-base-vendor.188b06b0a06d.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/js/lms-base-application.2062f84b79fa.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\js\lms-base-application.2062f84b79fa.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/js/student_account/logistration_factory.e32d5e4d472c.js?raw
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\js\student_account\logistration_factory.e32d5e4d472c.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/register?next=%2Fcourses%2Fcourse-v1:edX%2BDemoX%2BDemo_Course%2Fabout
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\register-1.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/login?next=%2Fcourses%2Fcourse-v1:edX%2BDemoX%2BDemo_Course%2Fabout
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\login-2.html
+Content Type: text/html
+
+Uri: https://twitter.com/intent/tweet?text=I just enrolled in DemoX edX Demonstration Course through %40YourPlatformTwitterAccount: https://20.210.124.230/courses/course-v1:edX%2BDemoX%2BDemo_Course/about
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\intent\tweet.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/static/js/course_info.0e87d00513f1.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\js\course_info.0e87d00513f1.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/register?next=%2Fabout
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\register-2.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/login?next=%2Fabout
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\login-3.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/register?next=%2Fblog
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\register-3.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/login?next=%2Fblog
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\login-4.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/contact
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\contact.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/register?next=%2Fcontact
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\register-4.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/login?next=%2Fcontact
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\login-5.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/register?next=%2Fdonate
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\register-5.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/login?next=%2Fdonate
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\login-6.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/register?next=%2Fprivacy
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\register-6.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/login?next=%2Fprivacy
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\login-7.html
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/bitnami/bitnami.css
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\bitnami\bitnami.css
+Content Type: text/css
+
+Uri: https://docs.bitnami.com/azure/faq/get-started/find-credentials/
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\azure\faq\get-started\find-credentials\index.htm
+Content Type: text/html
+
+Uri: https://docs.bitnami.com/azure/faq/get-started/connect-ssh/
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\azure\faq\get-started\connect-ssh\index.htm
+Content Type: text/html
+
+Uri: https://docs.bitnami.com/azure/apps/edx/configuration/sandbox-codejail/
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\azure\apps\edx\configuration\sandbox-codejail\index.htm
+Content Type: text/html
+
+Uri: https://docs.bitnami.com/azure/apps/edx/
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\azure\apps\edx\index.htm
+Content Type: text/html
+
+Uri: https://community.bitnami.com/
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\index-4.htm
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com/bitnami/logo.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\bitnami\logo.png
+Content Type: image/png
+
+Uri: https://dn41ky6oa3z70.cloudfront.net/open-edx-logo-tag.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\open-edx-logo-tag.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\index-3.htm
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/cms-style-vendor.0bb1c51e34bf.css
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\cms-style-vendor.0bb1c51e34bf.css
+Content Type: text/css
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/cms-style-vendor-tinymce-content.3d3d164a07cd.css
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\cms-style-vendor-tinymce-content.3d3d164a07cd.css
+Content Type: text/css
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/cms-style-vendor-tinymce-skin.b24337280cef.css
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\cms-style-vendor-tinymce-skin.b24337280cef.css
+Content Type: text/css
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/studio-main-v1.92ae5374f2ff.css
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\studio-main-v1.92ae5374f2ff.css
+Content Type: text/css
+
+Uri: http://20.210.124.230/register?next=http:%2F%2Fopenedx-demo.japaneast.cloudapp.azure.com:18010%2F
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\register-7.html
+Content Type: text/html
+
+Uri: https://www.edx.org/
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\index-5.htm
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/i18n/en/djangojs.2623d59dd64d.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\i18n\en\djangojs.2623d59dd64d.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/cms-base-vendor.fc516f7ace47.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\cms-base-vendor.fc516f7ace47.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/bundles/commons.a1c39622202e87421695.b825c6a670e7.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\bundles\commons.a1c39622202e87421695.b825c6a670e7.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/cms/js/require-config.3b6c47de644f.js
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\cms\js\require-config.3b6c47de644f.js
+Content Type: application/javascript
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/studio-logo.b6c374d66d57.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\studio-logo.b6c374d66d57.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/thumb-hiw-feature1.99fdb83f47b4.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\thumb-hiw-feature1.99fdb83f47b4.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/thumb-hiw-feature2.db508d73ec9d.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\thumb-hiw-feature2.db508d73ec9d.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/thumb-hiw-feature3.615e189e10bd.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\thumb-hiw-feature3.615e189e10bd.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/hiw-feature1.e405abcbf486.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\hiw-feature1.e405abcbf486.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/hiw-feature2.cae4b4f6ecc3.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\hiw-feature2.cae4b4f6ecc3.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/hiw-feature3.76d3bedb537e.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\hiw-feature3.76d3bedb537e.png
+Content Type: image/png
+
+Uri: https://docs.bitnami.com/azure/how-to/bitnami-remove-banner/
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\azure\how-to\bitnami-remove-banner\index.htm
+Content Type: text/html
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/vendor/fontawesome-webfont.25a32416abee.eot?v=4.6.3
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\vendor\fontawesome-webfont.25a32416abee.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/vendor/fontawesome-webfont.25a32416abee.eot?
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\vendor\fontawesome-webfont.25a32416abee-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/vendor/fontawesome-webfont.e6cf7c6ec7c2.woff2?v=4.6.3
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\vendor\fontawesome-webfont.e6cf7c6ec7c2.woff2
+Content Type: font/woff2
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/vendor/fontawesome-webfont.c8ddf1e5e5bf.woff?v=4.6.3
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\vendor\fontawesome-webfont.c8ddf1e5e5bf.woff
+Content Type: font/woff
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/vendor/fontawesome-webfont.1dc35d25e61d.ttf?v=4.6.3
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\vendor\fontawesome-webfont.1dc35d25e61d.ttf
+Content Type: font/ttf
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/vendor/fontawesome-webfont.d7c639084f68.svg?v=4.6.3
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\vendor\fontawesome-webfont.d7c639084f68.svg
+Content Type: image/svg+xml
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/vendor/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.092057982567.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\vendor\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.092057982567.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/vendor/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.5dd680f314aa.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\vendor\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.5dd680f314aa.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/vendor/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.9f1e2688895c.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\vendor\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.9f1e2688895c.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/vendor/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.80a8bf739374.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\vendor\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.80a8bf739374.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/vendor/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.8d846ad5e879.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\vendor\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.8d846ad5e879.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/vendor/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.714aab431dde.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\vendor\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.714aab431dde.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/vendor/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.061a034cf4d0.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\vendor\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.061a034cf4d0.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/vendor/ui-lightness/images/ui-icons_222222_256x240.9e54416cb586.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\vendor\ui-lightness\images\ui-icons_222222_256x240.9e54416cb586.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/vendor/ui-lightness/images/ui-icons_ffffff_256x240.30e3acc39653.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\vendor\ui-lightness\images\ui-icons_ffffff_256x240.30e3acc39653.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/vendor/ui-lightness/images/ui-icons_ef8c08_256x240.c3d7845c86bb.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\vendor\ui-lightness\images\ui-icons_ef8c08_256x240.c3d7845c86bb.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/vendor/ui-lightness/images/ui-icons_228ef1_256x240.6ab7541ba37f.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\vendor\ui-lightness\images\ui-icons_228ef1_256x240.6ab7541ba37f.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/vendor/ui-lightness/images/ui-icons_ffd27a_256x240.da156ea051f3.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\vendor\ui-lightness\images\ui-icons_ffd27a_256x240.da156ea051f3.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/vendor/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.aa8141e18be3.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\vendor\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.aa8141e18be3.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/css/vendor/ui-lightness/images/ui-bg_flat_10_000000_40x100.05c35f982c6d.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\css\vendor\ui-lightness\images\ui-bg_flat_10_000000_40x100.05c35f982c6d.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/skins/simple/images/handle.a75a913a0426.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\skins\simple\images\handle.a75a913a0426.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/skins/simple/images/menu.edb585e96a72.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\skins\simple\images\menu.edb585e96a72.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/skins/simple/images/submenu.826d62e57f6b.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\skins\simple\images\submenu.826d62e57f6b.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/h1.6ba8cf63911a.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\h1.6ba8cf63911a.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/h2.9cc0a47410d7.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\h2.9cc0a47410d7.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/h3.f9f9088f73e1.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\h3.f9f9088f73e1.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/h4.db48437451e2.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\h4.db48437451e2.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/h5.fc600a0b27e3.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\h5.fc600a0b27e3.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/bold.e5cde2aade38.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\bold.e5cde2aade38.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/italic.aff667def197.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\italic.aff667def197.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/stroke.1e7f8f27087f.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\stroke.1e7f8f27087f.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/list-bullet.111e3c77d7a4.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\list-bullet.111e3c77d7a4.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/list-numeric.6f1b57d2d6d4.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\list-numeric.6f1b57d2d6d4.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/picture.c215d8635017.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\picture.c215d8635017.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/link.c8bef935926a.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\link.c8bef935926a.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/url.cd5894881813.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\url.cd5894881813.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/quotes.0a556dc521bc.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\quotes.0a556dc521bc.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/code.50b392c2051b.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\code.50b392c2051b.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/markitup/sets/wiki/images/preview.2a5b7de72bf5.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\markitup\sets\wiki\images\preview.2a5b7de72bf5.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Light-webfont.ac5b729f30cf.woff2
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Light-webfont.ac5b729f30cf.woff2
+Content Type: font/woff2
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Light-webfont.df04ed7fc7d8.woff
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Light-webfont.df04ed7fc7d8.woff
+Content Type: font/woff
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Light-webfont.557ad65e492b.ttf
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Light-webfont.557ad65e492b.ttf
+Content Type: font/ttf
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-LightItalic-webfont.d86732122677.woff2
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-LightItalic-webfont.d86732122677.woff2
+Content Type: font/woff2
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-LightItalic-webfont.02d04d22784f.woff
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-LightItalic-webfont.02d04d22784f.woff
+Content Type: font/woff
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-LightItalic-webfont.05e99ea9cf0b.ttf
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-LightItalic-webfont.05e99ea9cf0b.ttf
+Content Type: font/ttf
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Regular-webfont.a17b3a9bf6a0.woff2
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Regular-webfont.a17b3a9bf6a0.woff2
+Content Type: font/woff2
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Regular-webfont.87119b577169.woff
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Regular-webfont.87119b577169.woff
+Content Type: font/woff
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Regular-webfont.4c7e867ae422.ttf
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Regular-webfont.4c7e867ae422.ttf
+Content Type: font/ttf
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Italic-webfont.22c2edbcc0ad.woff2
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Italic-webfont.22c2edbcc0ad.woff2
+Content Type: font/woff2
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Italic-webfont.b9812e74f089.woff
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Italic-webfont.b9812e74f089.woff
+Content Type: font/woff
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Italic-webfont.2416d120632b.ttf
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Italic-webfont.2416d120632b.ttf
+Content Type: font/ttf
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Semibold-webfont.09409c5982d1.woff2
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Semibold-webfont.09409c5982d1.woff2
+Content Type: font/woff2
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Semibold-webfont.dbbfd9e667c7.woff
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Semibold-webfont.dbbfd9e667c7.woff
+Content Type: font/woff
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Semibold-webfont.f75c4b742376.ttf
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Semibold-webfont.f75c4b742376.ttf
+Content Type: font/ttf
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.b88b3179838d.woff2
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-SemiboldItalic-webfont.b88b3179838d.woff2
+Content Type: font/woff2
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.f386291c234e.woff
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-SemiboldItalic-webfont.f386291c234e.woff
+Content Type: font/woff
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.e84740526b8c.ttf
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-SemiboldItalic-webfont.e84740526b8c.ttf
+Content Type: font/ttf
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Bold-webfont.5c778ce49ad5.woff2
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Bold-webfont.5c778ce49ad5.woff2
+Content Type: font/woff2
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Bold-webfont.6dbaf63547f2.woff
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Bold-webfont.6dbaf63547f2.woff
+Content Type: font/woff
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-Bold-webfont.ad0eb070a07f.ttf
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-Bold-webfont.ad0eb070a07f.ttf
+Content Type: font/ttf
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-BoldItalic-webfont.3813cb506edd.woff2
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-BoldItalic-webfont.3813cb506edd.woff2
+Content Type: font/woff2
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-BoldItalic-webfont.7dae097d5db8.woff
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-BoldItalic-webfont.7dae097d5db8.woff
+Content Type: font/woff
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/OpenSans/OpenSans-BoldItalic-webfont.f9103010ab55.ttf
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\OpenSans\OpenSans-BoldItalic-webfont.f9103010ab55.ttf
+Content Type: font/ttf
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/tinymce/js/tinymce/skins/studio-tmce4/img/object.f3726450d745.gif
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\tinymce\js\tinymce\skins\studio-tmce4\img\object.f3726450d745.gif
+Content Type: image/gif
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/tinymce/js/tinymce/skins/studio-tmce4/img/anchor.abd361357180.gif
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\tinymce\js\tinymce\skins\studio-tmce4\img\anchor.abd361357180.gif
+Content Type: image/gif
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/tinymce/js/tinymce/skins/studio-tmce4/img/wline.c136c9f8e007.gif
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\tinymce\js\tinymce\skins\studio-tmce4\img\wline.c136c9f8e007.gif
+Content Type: image/gif
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/tinymce/js/tinymce/skins/studio-tmce4/img/loader.1739904fd66b.gif
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\tinymce\js\tinymce\skins\studio-tmce4\img\loader.1739904fd66b.gif
+Content Type: image/gif
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/tinymce/js/tinymce/skins/studio-tmce4/fonts/icomoon.5883970cedfa.eot
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\tinymce\js\tinymce\skins\studio-tmce4\fonts\icomoon.5883970cedfa.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/tinymce/js/tinymce/skins/studio-tmce4/fonts/icomoon.5883970cedfa.eot?
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\tinymce\js\tinymce\skins\studio-tmce4\fonts\icomoon.5883970cedfa-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/tinymce/js/tinymce/skins/studio-tmce4/fonts/icomoon.e3c399104c36.svg
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\tinymce\js\tinymce\skins\studio-tmce4\fonts\icomoon.e3c399104c36.svg
+Content Type: image/svg+xml
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/tinymce/js/tinymce/skins/studio-tmce4/fonts/icomoon.070adab4c3a4.woff
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\tinymce\js\tinymce\skins\studio-tmce4\fonts\icomoon.070adab4c3a4.woff
+Content Type: font/woff
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/tinymce/js/tinymce/skins/studio-tmce4/fonts/icomoon.31986293cace.ttf
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\tinymce\js\tinymce\skins\studio-tmce4\fonts\icomoon.31986293cace.ttf
+Content Type: font/ttf
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/tinymce/js/tinymce/skins/studio-tmce4/fonts/icomoon-small.337b5512f9aa.eot
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\tinymce\js\tinymce\skins\studio-tmce4\fonts\icomoon-small.337b5512f9aa.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/tinymce/js/tinymce/skins/studio-tmce4/fonts/icomoon-small.337b5512f9aa.eot?
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\tinymce\js\tinymce\skins\studio-tmce4\fonts\icomoon-small.337b5512f9aa-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/tinymce/js/tinymce/skins/studio-tmce4/fonts/icomoon-small.be5ab6943816.svg
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\tinymce\js\tinymce\skins\studio-tmce4\fonts\icomoon-small.be5ab6943816.svg
+Content Type: image/svg+xml
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/tinymce/js/tinymce/skins/studio-tmce4/fonts/icomoon-small.002c135180a7.woff
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\tinymce\js\tinymce\skins\studio-tmce4\fonts\icomoon-small.002c135180a7.woff
+Content Type: font/woff
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/js/vendor/tinymce/js/tinymce/skins/studio-tmce4/fonts/icomoon-small.a5261a721e47.ttf
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\js\vendor\tinymce\js\tinymce\skins\studio-tmce4\fonts\icomoon-small.a5261a721e47.ttf
+Content Type: font/ttf
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/drag-handles.c03713dfd4ec.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\drag-handles.c03713dfd4ec.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/large-advanced-icon.4e1974f70c78.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\large-advanced-icon.4e1974f70c78.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/large-discussion-icon.117e7f10d6e8.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\large-discussion-icon.117e7f10d6e8.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/large-html-icon.bb04c8e6bd7c.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\large-html-icon.bb04c8e6bd7c.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/large-problem-icon.4c1981f6dbff.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\large-problem-icon.4c1981f6dbff.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/large-video-icon.304c064a10a5.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\large-video-icon.304c064a10a5.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/large-openassessment-icon.ae0377b9a5af.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\large-openassessment-icon.ae0377b9a5af.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/search-icon.45d274f9bea2.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\search-icon.45d274f9bea2.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/bg-micro-stripes.72362ed31cb7.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\bg-micro-stripes.72362ed31cb7.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/CreativeCommons/cc.1e88b5e25694.eot
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\CreativeCommons\cc.1e88b5e25694.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/CreativeCommons/cc.4056dea56c31.woff
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\CreativeCommons\cc.4056dea56c31.woff
+Content Type: font/woff
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/CreativeCommons/cc.ae5bfe84d5e1.ttf
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\CreativeCommons\cc.ae5bfe84d5e1.ttf
+Content Type: font/ttf
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/fonts/CreativeCommons/cc.5d1b3e457ec3.svg
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\fonts\CreativeCommons\cc.5d1b3e457ec3.svg
+Content Type: image/svg+xml
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/unanswered-icon.eeff5036aba7.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\unanswered-icon.eeff5036aba7.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/spinner.bc34f953403f.gif
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\spinner.bc34f953403f.gif
+Content Type: image/gif
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/correct-icon.297b1d332d09.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\correct-icon.297b1d332d09.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/incorrect-icon.37ebcbcae4e0.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\incorrect-icon.37ebcbcae4e0.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/info-icon.38ff72cb4e5d.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\info-icon.38ff72cb4e5d.png
+Content Type: image/png
+
+Uri: http://openedx-demo.japaneast.cloudapp.azure.com:18010/static/studio/images/partially-correct-icon.90b854eac6e9.png
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\static\studio\images\partially-correct-icon.90b854eac6e9.png
+Content Type: image/png
+
+Uri: https://edx.readthedocs.io/projects/open-edx-building-and-running-a-course/en/open-release-lilac.master/getting_started/index.html
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\projects\open-edx-building-and-running-a-course\en\open-release-lilac.master\getting_started\index.html
+Content Type: text/html
+
+Uri: http://20.210.124.230/login?next=http:%2F%2Fopenedx-demo.japaneast.cloudapp.azure.com:18010%2F
+File Name: D:\openedx-demo.japaneast.cloudapp.azure.com\login-8.html
+Content Type: text/html
+
